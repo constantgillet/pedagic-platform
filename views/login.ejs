@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Plateforme pédagique | Se connecter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-    <form action="" method="POST">
-        <input type="text" name="email" id="">
-        <input type="submit" value="submit">
-    </form>
-    <% if(typeof(message) != 'undefined') { %>
-        <h2><%= message %></h2>
-    <% } %>
+    <main>
+        <section class="login-section">
+            <h1 class="login-section__title">S'inscrire</h1>
+            <!-- login form start -->
+            <form action="" method="POST" class="login-form">
+                <div class="login-form__main-part">
+                    <!-- Left form part start -->
+                    <div class="login-form__first-part">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name" required>
+                        <label for="firstName">Prénom</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                        <div>
+                            <input type="radio" name="userType" id="teacher" value="teacher">
+                            <label for="teacher">Proffesseur</label>
+                            <input type="radio" name="userType" id="student" value="student" checked>
+                            <label for="student">Elève</label>
+                        </div>
+                        <label for="password">Mot de passe</label>
+                        <input type="password" name="password" id="password" required>
+                        <label for="passwordConfirmation">Confirmez votre mot de passe</label>
+                        <input type="password" name="passwordConfirmation" id="passwordConfirmation" required>
+                    </div><!-- Left form part end -->
+                    <!-- Right form part -->
+                    <div class="login-form__second-part">
+                        <label>
+                            <input type="radio" name="gender" value="male" checked>
+                            <img src="images/maleAvatar.svg" class="maleImage">
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            <img src="images/femaleAvatar.svg" class="femaleImage">
+                        </label>
+                    </div><!-- Right form part end -->
+                </div>
+                <% if(typeof(message) != 'undefined') { %>
+                    <h2><%= message %></h2>
+                <% } %>
+                <input type="submit" placeholder="S'inscrire">
+            </form><!-- login form end -->
+        </section>
+        <div class="background-decoration"></div>
+    </main>
 </body>
 </html>
