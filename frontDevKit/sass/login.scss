@@ -7,7 +7,7 @@ body {
 .background-decoration {
     width: 2406px;
     height: 2406px;
-    right: -1800px;
+    right: -2260px;
     top: -663px;
     background: #4CAEE1;
     border-radius: 50%;
@@ -16,11 +16,12 @@ body {
 }
 
 .login-section {
-    top: 25%;
-    left: 15%;
+    top: 50%;
+    left: 113px;
     position: absolute;
     width: 458px;
     z-index: 10;
+    transform: translateY(-54%);
 
     &__title {
         font-style: normal;
@@ -28,6 +29,13 @@ body {
         font-size: 3rem;
         line-height: 43px;
         text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__alert {
+        color: #F13B3B;
+        margin-top: 15px;
+        font-size: 1.1em;
     }
 
     .login-form {
@@ -41,6 +49,23 @@ body {
         &__first-part {
             display: flex;
             flex-direction: column;
+
+            label {
+                font-weight: normal;
+                font-size: 1.2em;
+                margin-top: 16px;
+                margin-bottom: 5px;
+            }
+
+            [type=text], [type=email], [type=password] {
+                height: 30px;
+                width: 428px;
+                border: solid black 1px;
+                border-radius: 8px;
+                font-size: 1em;
+                padding-left: 20px;
+                color: #424242;
+            }
         }
 
         &__second-part {
@@ -48,6 +73,8 @@ body {
             img {
                 width: 236px;
                 height: 291px;
+                margin-right: 10px;
+                margin-left: 10px;
             }
 
             position: absolute;
@@ -62,18 +89,28 @@ body {
                 height: 0;
               }
               
-            /* IMAGE STYLES */
             [type=radio] + img {
                 cursor: pointer;
                 border: 1.5px solid #C2C2C2;
                 border-radius: 8px;
             }
               
-            /* CHECKED STYLES */
             [type=radio]:checked + img {
                 border: 1.5px solid #000000;
                 border-radius: 8px;
             }
+        }
+
+        .submit {
+            background: #4CAEE1;
+            border: none;
+            border-radius: 8px;
+            height: 49px;
+            width: 185px;
+            font-weight: bold;
+            color: white;
+            font-size: 1.15em;
+            margin-top: 30px;
         }
     }
 }

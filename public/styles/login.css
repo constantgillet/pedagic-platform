@@ -6,7 +6,7 @@ body {
 .background-decoration {
   width: 2406px;
   height: 2406px;
-  right: -1800px;
+  right: -2260px;
   top: -663px;
   background: #4CAEE1;
   border-radius: 50%;
@@ -14,17 +14,23 @@ body {
   z-index: 0; }
 
 .login-section {
-  top: 25%;
-  left: 15%;
+  top: 50%;
+  left: 113px;
   position: absolute;
   width: 458px;
-  z-index: 10; }
+  z-index: 10;
+  transform: translateY(-54%); }
   .login-section__title {
     font-style: normal;
     font-weight: 900;
     font-size: 3rem;
     line-height: 43px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 17px; }
+  .login-section__alert {
+    color: #F13B3B;
+    margin-top: 15px;
+    font-size: 1.1em; }
   .login-section .login-form__main-part {
     flex-direction: row;
     flex-wrap: nowrap;
@@ -32,16 +38,29 @@ body {
   .login-section .login-form__first-part {
     display: flex;
     flex-direction: column; }
+    .login-section .login-form__first-part label {
+      font-weight: normal;
+      font-size: 1.2em;
+      margin-top: 16px;
+      margin-bottom: 5px; }
+    .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
+      height: 30px;
+      width: 428px;
+      border: solid black 1px;
+      border-radius: 8px;
+      font-size: 1em;
+      padding-left: 20px;
+      color: #424242; }
   .login-section .login-form__second-part {
     position: absolute;
     right: -530px;
     top: 50%;
-    transform: translateY(-50%);
-    /* IMAGE STYLES */
-    /* CHECKED STYLES */ }
+    transform: translateY(-50%); }
     .login-section .login-form__second-part img {
       width: 236px;
-      height: 291px; }
+      height: 291px;
+      margin-right: 10px;
+      margin-left: 10px; }
     .login-section .login-form__second-part [type=radio] {
       position: absolute;
       opacity: 0;
@@ -54,5 +73,15 @@ body {
     .login-section .login-form__second-part [type=radio]:checked + img {
       border: 1.5px solid #000000;
       border-radius: 8px; }
+  .login-section .login-form .submit {
+    background: #4CAEE1;
+    border: none;
+    border-radius: 8px;
+    height: 49px;
+    width: 185px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.15em;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=login.css.map */
