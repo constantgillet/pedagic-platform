@@ -59,7 +59,7 @@ body {
                 margin-bottom: 5px;
             }
 
-            [type=text], [type=email], [type=password] {
+            [type=text], [type=email], [type=password]{
                 height: 3vh;
                 width: 40vh;
                 border: solid black 1px;
@@ -69,6 +69,13 @@ body {
                 color: #424242;
             }
         }
+           [type=image]{
+            position: absolute;
+            height: 3vh;
+            width: 3vh;
+            margin-left: 78%;
+            margin-top: 81%;
+           }
 
         &__second-part {
 

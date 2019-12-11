@@ -70,6 +70,15 @@ body {
             }
         }
 
+        [type=image]{
+            position: absolute;
+            height: 3vh;
+            width: 3vh;
+            margin-left: 78%;
+            margin-top: 81%;
+           }
+
+
         &__second-part {
 
             img {

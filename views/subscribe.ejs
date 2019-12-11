@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Plateforme pédagique | S'inscrire</title>
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/subscribe.css">
 </head>
+
 <body>
     <main>
         <section class="login-section">
@@ -25,7 +27,7 @@
                         <input type="email" name="email" id="email" required>
                         <div class="login-form__radio-button-div">
                             <label for="teacher" class="login-form__radio-button">
-                                <input type="radio" name="userType" id="teacher" value="teacher" >
+                                <input type="radio" name="userType" id="teacher" value="teacher">
                                 Professeur
                             </label>
                             <label for="student" class="login-form__radio-button">
@@ -35,7 +37,8 @@
                         </div>
                         <label for="password">Mot de passe</label>
                         <input type="password" name="password" id="password" required>
-                        <label for="passwordConfirmation">Confirmez votre mot de passe</label>
+                        <input type="image" name="image" id="image" src=images/eye.svg> <label
+                            for="passwordConfirmation">Confirmez votre mot de passe</label>
                         <input type="password" name="passwordConfirmation" id="passwordConfirmation" required>
                     </div><!-- Left form part end -->
                     <!-- Right form part -->
@@ -51,7 +54,7 @@
                     </div><!-- Right form part end -->
                 </div>
                 <% if(typeof(alertMessage) != 'undefined') { %>
-                    <div class="login-section__alert"><%= alertMessage %></div>
+                <div class="login-section__alert"><%= alertMessage %></div>
                 <% } %>
                 <input type="submit" placeholder="S'inscrire" class="submit">
             </form><!-- login form end -->
@@ -59,4 +62,5 @@
         <div class="background-decoration"></div>
     </main>
 </body>
+
 </html>
