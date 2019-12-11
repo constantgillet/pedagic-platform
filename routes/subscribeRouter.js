@@ -1,13 +1,15 @@
 const express = require('express')
 const router = express.Router()
 const sha1 = require('sha1')
-const mysqlConf = require('../config').mysql_pool;
+//We connect to the database
+const db = require('../dbConnect')
 
 /* GET home page. */
 router.get('/', (req, res) => {
   res.render('subscribe')
 })
 
+//If the client complte the form
 router.post('/', (req, res) => {
   
   if(typeof(req.body.name) != 'undefined' &&
@@ -39,13 +41,41 @@ router.post('/', (req, res) => {
           //Controlling password length
           if(password.length > 5) {
 
-            //Hash passwords with Sha1
-            sha1(password)
-            sha1(passwordConfirmation)
-
             //We control if password match
             if(password === passwordConfirmation) {
-              res.render('subscribe', { alertMessage: 'Votre compte a été créé.'})
+
+              //Hash passwords with Sha1
+              password = sha1(password)
+
+              //Control if there is already an user registrer with the email
+              const sql = `SELECT userId FROM users WHERE userEmail = '${ email }'`
+              
+              //Selecting data
+              db.query(sql, (err, result) => {
+                  if(!err){
+
+                    //If there is not already an user with the email 
+                    if(result.length == 0) {
+
+                      const sql = `INSERT INTO users (userEmail, userName, userFirstName, userGender, userPassword, userType) VALUES (
+                      '${ email }', '${ name }', '${ firstName }', '${ gender }', '${ password }', '${ userType }')`
+
+                      //Insering datas
+                      db.query(sql, (err, result) => {
+                        if (err) throw err
+                          console.log("1 record inserted")
+                          res.render('subscribe', { alertMessage: 'Votre compte a été créé.'})
+                      })
+                    }
+                    else {
+                      res.render('subscribe', { alertMessage: 'Cet email a déjà été utilisé.'})
+                    }
+                  }
+                  else {
+                    throw err
+                    console.log(err)
+                  }
+              }) 
             }
             else {
               res.render('subscribe', { alertMessage: 'Les mots de passe ne correspondent pas.'})
