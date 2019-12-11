@@ -52,6 +52,12 @@ body {
       font-size: 1.2em;
       padding-left: 20px;
       color: #424242; }
+  .login-section .login-form [type=image] {
+    position: absolute;
+    height: 3vh;
+    width: 3vh;
+    margin-left: 78%;
+    margin-top: 81%; }
   .login-section .login-form__second-part {
     position: absolute;
     right: -130%;
