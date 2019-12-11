@@ -40,15 +40,15 @@ body {
     flex-direction: column; }
     .login-section .login-form__first-part label {
       font-weight: normal;
-      font-size: 1.2em;
+      font-size: 1.3em;
       margin-top: 16px;
       margin-bottom: 5px; }
     .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
-      height: 30px;
-      width: 428px;
+      height: 32px;
+      width: 370px;
       border: solid black 1px;
       border-radius: 8px;
-      font-size: 1em;
+      font-size: 1.2em;
       padding-left: 20px;
       color: #424242; }
   .login-section .login-form__second-part {
@@ -71,17 +71,25 @@ body {
       border: 1.5px solid #C2C2C2;
       border-radius: 8px; }
     .login-section .login-form__second-part [type=radio]:checked + img {
-      border: 1.5px solid #000000;
+      border: 1.5px solid black;
       border-radius: 8px; }
+  .login-section .login-form__radio-button {
+    border: solid 1px #C2C2C2;
+    border-radius: 8px;
+    padding: 14px 46px;
+    margin-top: 10px; }
+  .login-section .login-form__radio-button-div {
+    margin-top: 35px;
+    margin-bottom: 7px; }
   .login-section .login-form .submit {
     background: #4CAEE1;
     border: none;
     border-radius: 8px;
-    height: 49px;
-    width: 185px;
+    height: 39px;
+    width: 176px;
     font-weight: bold;
     color: white;
     font-size: 1.15em;
     margin-top: 30px; }
 
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=subscribe.css.map */

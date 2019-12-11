@@ -52,17 +52,17 @@ body {
 
             label {
                 font-weight: normal;
-                font-size: 1.2em;
+                font-size: 1.3em;
                 margin-top: 16px;
                 margin-bottom: 5px;
             }
 
             [type=text], [type=email], [type=password] {
-                height: 30px;
-                width: 428px;
+                height: 32px;
+                width: 370px;
                 border: solid black 1px;
                 border-radius: 8px;
-                font-size: 1em;
+                font-size: 1.2em;
                 padding-left: 20px;
                 color: #424242;
             }
@@ -96,17 +96,31 @@ body {
             }
               
             [type=radio]:checked + img {
-                border: 1.5px solid #000000;
+                border: 1.5px solid hsl(0, 0%, 0%);
                 border-radius: 8px;
             }
+        }
+
+        &__radio-button {
+            border: solid 1px #C2C2C2;
+            border-radius: 8px;
+            padding: 14px 46px;
+            margin-top: 10px;
+
+        
+        }
+
+        &__radio-button-div {
+            margin-top: 35px;
+            margin-bottom: 7px;
         }
 
         .submit {
             background: #4CAEE1;
             border: none;
             border-radius: 8px;
-            height: 49px;
-            width: 185px;
+            height: 39px;
+            width: 176px;
             font-weight: bold;
             color: white;
             font-size: 1.15em;

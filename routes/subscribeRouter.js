@@ -5,17 +5,17 @@ const mysqlConf = require('../config').mysql_pool;
 
 /* GET home page. */
 router.get('/', (req, res) => {
-  res.render('login')
+  res.render('subscribe')
 })
 
 router.post('/', (req, res) => {
 
   let email = req.body.email
   if(email.length == 0) {
-    res.render('login', { message: 'email trop court' })
+    res.render('subscribe', { message: 'email trop court' })
   }
   else {
-    res.render('login', { message: 'email posté' })
+    res.render('subscribe', { message: 'email posté' })
   }
   
 })

@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Plateforme pédagique | Se connecter</title>
+    <title>Plateforme pédagique | S'inscrire</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/subscribe.css">
 </head>
 <body>
     <main>
@@ -23,11 +23,15 @@
                         <input type="text" name="firstName" id="firstName" required>
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" required>
-                        <div>
-                            <input type="radio" name="userType" id="teacher" value="teacher">
-                            <label for="teacher">Proffesseur</label>
-                            <input type="radio" name="userType" id="student" value="student" checked>
-                            <label for="student">Elève</label>
+                        <div class="login-form__radio-button-div">
+                            <label for="teacher" class="login-form__radio-button">
+                                <input type="radio" name="userType" id="teacher" value="teacher" >
+                                Professeur
+                            </label>
+                            <label for="student" class="login-form__radio-button">
+                                <input type="radio" name="userType" id="student" value="student" checked>
+                                Elève
+                            </label>
                         </div>
                         <label for="password">Mot de passe</label>
                         <input type="password" name="password" id="password" required>

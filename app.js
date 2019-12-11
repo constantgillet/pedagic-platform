@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
-const loginRouter = require('./routes/loginRouter');
+const loginRouter = require('./routes/subscribeRouter');
 
 const app = express()
 
@@ -13,7 +13,7 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/login', loginRouter);
+app.use('/subscribe', loginRouter);
 
 app.use(express.static('public'));
 
