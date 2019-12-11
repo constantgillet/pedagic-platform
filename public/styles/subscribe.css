@@ -1,13 +1,14 @@
 body {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
-  overflow: hidden; }
+  overflow: hidden;
+  object-fit: cover; }
 
 .background-decoration {
-  width: 2406px;
-  height: 2406px;
-  right: -2260px;
-  top: -663px;
+  width: 261vh;
+  height: 261vh;
+  left: 70%;
+  top: -70%;
   background: #4CAEE1;
   border-radius: 50%;
   position: absolute;
@@ -15,37 +16,37 @@ body {
 
 .login-section {
   top: 50%;
-  left: 113px;
+  left: 7%;
   position: absolute;
-  width: 458px;
+  width: 49vh;
   z-index: 10;
   transform: translateY(-54%); }
   .login-section__title {
-    font-style: normal;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2.25rem;
     line-height: 43px;
-    text-align: center;
-    margin-bottom: 17px; }
+    text-align: center; }
   .login-section__alert {
     color: #F13B3B;
     margin-top: 15px;
-    font-size: 1.1em; }
+    font-size: 1.1rem; }
   .login-section .login-form__main-part {
     flex-direction: row;
     flex-wrap: nowrap;
-    position: relative; }
+    position: relative;
+    justify-content: center;
+    display: flex; }
   .login-section .login-form__first-part {
     display: flex;
     flex-direction: column; }
     .login-section .login-form__first-part label {
       font-weight: normal;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       margin-top: 16px;
       margin-bottom: 5px; }
     .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
-      height: 32px;
-      width: 370px;
+      height: 3vh;
+      width: 40vh;
       border: solid black 1px;
       border-radius: 8px;
       font-size: 1.2em;
@@ -53,12 +54,12 @@ body {
       color: #424242; }
   .login-section .login-form__second-part {
     position: absolute;
-    right: -530px;
+    right: -130%;
     top: 50%;
     transform: translateY(-50%); }
     .login-section .login-form__second-part img {
-      width: 236px;
-      height: 291px;
+      width: 25vh;
+      height: 31vh;
       margin-right: 10px;
       margin-left: 10px; }
     .login-section .login-form__second-part [type=radio] {
@@ -76,20 +77,24 @@ body {
   .login-section .login-form__radio-button {
     border: solid 1px #C2C2C2;
     border-radius: 8px;
-    padding: 14px 46px;
-    margin-top: 10px; }
+    padding: 12px 46px;
+    margin-top: 6%;
+    margin-left: 2%; }
   .login-section .login-form__radio-button-div {
-    margin-top: 35px;
-    margin-bottom: 7px; }
+    margin-top: 11%;
+    margin-bottom: 7%;
+    width: 43vh;
+    margin-left: -3%; }
   .login-section .login-form .submit {
     background: #4CAEE1;
     border: none;
     border-radius: 8px;
-    height: 39px;
-    width: 176px;
+    height: 5vh;
+    width: 16vh;
     font-weight: bold;
     color: white;
     font-size: 1.15em;
-    margin-top: 30px; }
+    margin-top: 10%;
+    margin-left: 28%; }
 
 /*# sourceMappingURL=subscribe.css.map */
