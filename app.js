@@ -1,8 +1,8 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 
-const loginRouter = require('./routes/subscribeRouter');
-
+const subscribeRouter = require('./routes/subscribeRouter');
+const loginRouter = require('./routes/loginRouter');
 const app = express()
 
 //eJS
@@ -13,7 +13,8 @@ app.set('view engine', 'ejs')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/subscribe', loginRouter);
+app.use('/subscribe', subscribeRouter);
+app.use('/login', loginRouter);
 
 app.use(express.static('public'));
 

@@ -1,0 +1,95 @@
+body {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden; }
+
+.background-decoration {
+  width: 2406px;
+  height: 2406px;
+  right: -2260px;
+  top: -663px;
+  background: #4CAEE1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0; }
+
+.login-section {
+  top: 50%;
+  left: 113px;
+  position: absolute;
+  width: 458px;
+  z-index: 10;
+  transform: translateY(-54%); }
+  .login-section__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 43px;
+    text-align: center;
+    margin-bottom: 17px; }
+  .login-section__alert {
+    color: #F13B3B;
+    margin-top: 15px;
+    font-size: 1.1em; }
+  .login-section .login-form__main-part {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative; }
+  .login-section .login-form__first-part {
+    display: flex;
+    flex-direction: column; }
+    .login-section .login-form__first-part label {
+      font-weight: normal;
+      font-size: 1.3em;
+      margin-top: 16px;
+      margin-bottom: 5px; }
+    .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
+      height: 32px;
+      width: 370px;
+      border: solid black 1px;
+      border-radius: 8px;
+      font-size: 1.2em;
+      padding-left: 20px;
+      color: #424242; }
+  .login-section .login-form__second-part {
+    position: absolute;
+    right: -530px;
+    top: 50%;
+    transform: translateY(-50%); }
+    .login-section .login-form__second-part img {
+      width: 236px;
+      height: 291px;
+      margin-right: 10px;
+      margin-left: 10px; }
+    .login-section .login-form__second-part [type=radio] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    .login-section .login-form__second-part [type=radio] + img {
+      cursor: pointer;
+      border: 1.5px solid #C2C2C2;
+      border-radius: 8px; }
+    .login-section .login-form__second-part [type=radio]:checked + img {
+      border: 1.5px solid black;
+      border-radius: 8px; }
+  .login-section .login-form__radio-button {
+    border: solid 1px #C2C2C2;
+    border-radius: 8px;
+    padding: 14px 46px;
+    margin-top: 10px; }
+  .login-section .login-form__radio-button-div {
+    margin-top: 35px;
+    margin-bottom: 7px; }
+  .login-section .login-form .submit {
+    background: #4CAEE1;
+    border: none;
+    border-radius: 8px;
+    height: 39px;
+    width: 176px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.15em;
+    margin-top: 30px; }
+
+/*# sourceMappingURL=login.css.map */

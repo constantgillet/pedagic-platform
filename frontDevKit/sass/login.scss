@@ -1,0 +1,130 @@
+body {
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+}
+
+.background-decoration {
+    width: 2406px;
+    height: 2406px;
+    right: -2260px;
+    top: -663px;
+    background: #4CAEE1;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.login-section {
+    top: 50%;
+    left: 113px;
+    position: absolute;
+    width: 458px;
+    z-index: 10;
+    transform: translateY(-54%);
+
+    &__title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 3rem;
+        line-height: 43px;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+
+    &__alert {
+        color: #F13B3B;
+        margin-top: 15px;
+        font-size: 1.1em;
+    }
+
+    .login-form {
+
+        &__main-part {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            position: relative;
+        }
+
+        &__first-part {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: normal;
+                font-size: 1.3em;
+                margin-top: 16px;
+                margin-bottom: 5px;
+            }
+
+            [type=text], [type=email], [type=password] {
+                height: 32px;
+                width: 370px;
+                border: solid black 1px;
+                border-radius: 8px;
+                font-size: 1.2em;
+                padding-left: 20px;
+                color: #424242;
+            }
+        }
+
+        &__second-part {
+
+            img {
+                width: 236px;
+                height: 291px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+
+            position: absolute;
+            right: -530px;
+            top: 50%;
+            transform: translateY(-50%);
+
+            [type=radio] { 
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+              
+            [type=radio] + img {
+                cursor: pointer;
+                border: 1.5px solid #C2C2C2;
+                border-radius: 8px;
+            }
+              
+            [type=radio]:checked + img {
+                border: 1.5px solid hsl(0, 0%, 0%);
+                border-radius: 8px;
+            }
+        }
+
+        &__radio-button {
+            border: solid 1px #C2C2C2;
+            border-radius: 8px;
+            padding: 14px 46px;
+            margin-top: 10px;
+
+        
+        }
+
+        &__radio-button-div {
+            margin-top: 35px;
+            margin-bottom: 7px;
+        }
+
+        .submit {
+            background: #4CAEE1;
+            border: none;
+            border-radius: 8px;
+            height: 39px;
+            width: 176px;
+            font-weight: bold;
+            color: white;
+            font-size: 1.15em;
+            margin-top: 30px;
+        }
+    }
+}
