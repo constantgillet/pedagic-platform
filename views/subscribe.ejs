@@ -11,7 +11,7 @@
 <body>
     <main>
         <section class="login-section">
-            <h1 class="login-section__title">S'inscrire</h1>
+            <h1 class="login-section__title">Créer un compte</h1>
             <!-- login form start -->
             <form action="" method="POST" class="login-form">
                 <div class="login-form__main-part">
@@ -50,8 +50,8 @@
                         </label>
                     </div><!-- Right form part end -->
                 </div>
-                <% if(typeof(message) != 'undefined') { %>
-                    <div class="login-section__alert"><%= message %></div>
+                <% if(typeof(alertMessage) != 'undefined') { %>
+                    <div class="login-section__alert"><%= alertMessage %></div>
                 <% } %>
                 <input type="submit" placeholder="S'inscrire" class="submit">
             </form><!-- login form end -->
