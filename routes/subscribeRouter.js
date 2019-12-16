@@ -16,18 +16,16 @@ router.post('/', (req, res) => {
   typeof(req.body.firstName) != 'undefined' &&
   typeof(req.body.email) != 'undefined' &&
   typeof(req.body.userType) != 'undefined' &&
-  typeof(req.body.gender) != 'undefined' &&
   typeof(req.body.password) != 'undefined' &&
   typeof(req.body.passwordConfirmation) != 'undefined'
   ) {
     
     let name = req.body.name,
-          firstName = req.body.firstName,
-          email = req.body.email,
-          userType = req.body.userType,
-          gender = req.body.gender,
-          password = req.body.password,
-          passwordConfirmation = req.body.passwordConfirmation
+        firstName = req.body.firstName,
+        email = req.body.email,
+        userType = req.body.userType,
+        password = req.body.password,
+        passwordConfirmation = req.body.passwordConfirmation
 
     //Controling length of the name and firstname
     if(name.length < 25 && name.length != 0 && firstName.length < 25 && firstName.length != 0) {
@@ -36,7 +34,7 @@ router.post('/', (req, res) => {
       if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) { 
 
         //Controling gender and usertype
-        if((gender == 'male' || gender == 'female') && (userType == 'teacher' || userType == 'student')) {
+        if(userType == 'teacher' || userType == 'student') {
 
           //Controlling password length
           if(password.length > 5) {
@@ -57,14 +55,15 @@ router.post('/', (req, res) => {
                     //If there is not already an user with the email 
                     if(result.length == 0) {
 
-                      const sql = `INSERT INTO users (userEmail, userName, userFirstName, userGender, userPassword, userType) VALUES (
-                      '${ email }', '${ name }', '${ firstName }', '${ gender }', '${ password }', '${ userType }')`
+                      const sql = `INSERT INTO users (userEmail, userName, userFirstName, userPassword, userType) VALUES (
+                      '${ email }', '${ name }', '${ firstName }', '${ password }', '${ userType }')`
 
                       //Insering datas
                       db.query(sql, (err, result) => {
                         if (err) throw err
-                          console.log("1 record inserted")
-                          res.render('subscribe', { alertMessage: 'Votre compte a été créé.'})
+                          console.log('1 record inserted')
+                          //res.render('subscribe', { alertMessage: 'Votre compte a été créé.'})
+                          res.redirect('/choseAvatar')
                       })
                     }
                     else {
@@ -98,7 +97,7 @@ router.post('/', (req, res) => {
     } 
   }
   else {
-    res.render('subscribe', { alertMessage: 'email trop court' })
+    res.render('subscribe', { alertMessage: 'Merci de tout compléter.' })
   }
 })
 

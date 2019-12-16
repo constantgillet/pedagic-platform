@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <title>Plateforme pédagique | S'inscrire</title>
@@ -9,58 +8,41 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/subscribe.css">
 </head>
-
 <body>
     <main>
-        <section class="login-section">
-            <h1 class="login-section__title">Créer un compte</h1>
-            <!-- login form start -->
-            <form action="" method="POST" class="login-form">
-                <div class="login-form__main-part">
-                    <!-- Left form part start -->
-                    <div class="login-form__first-part">
-                        <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" required>
-                        <label for="firstName">Prénom</label>
-                        <input type="text" name="firstName" id="firstName" required>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                        <div class="login-form__radio-button-div">
-                            <label for="teacher" class="login-form__radio-button">
-                                <input type="radio" name="userType" id="teacher" value="teacher">
-                                Professeur
-                            </label>
-                            <label for="student" class="login-form__radio-button">
-                                <input type="radio" name="userType" id="student" value="student" checked>
-                                Elève
-                            </label>
-                        </div>
-                        <label for="password">Mot de passe</label>
-                        <input type="password" name="password" id="password" required>
-                        <input type="image" name="image" id="image" src=images/eye.svg> <label
-                            for="passwordConfirmation">Confirmez votre mot de passe</label>
-                        <input type="password" name="passwordConfirmation" id="passwordConfirmation" required>
-                    </div><!-- Left form part end -->
-                    <!-- Right form part -->
-                    <div class="login-form__second-part">
-                        <label>
-                            <input type="radio" name="gender" value="male" checked>
-                            <img src="images/maleAvatar.svg" class="maleImage">
-                        </label>
-                        <label>
-                            <input type="radio" name="gender" value="female">
-                            <img src="images/femaleAvatar.svg" class="femaleImage">
-                        </label>
-                    </div><!-- Right form part end -->
+        <!-- subscribe section start-->
+        <section class="subscribe">
+            <h1 class="subscribe__title">S'inscrire</h1>
+            <!-- Subscribe form start -->
+            <form action="" method="post" class="subscribe__form">
+                <label for="name">Nom</label>
+                <input type="text" name="name" id="name" required>
+                <label for="firstName">Prénom</label>
+                <input type="text" name="firstName" id="firstName" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <div class="">
+                    <label for="teacher" class="">
+                    <input type="radio" name="userType" id="teacher" value="teacher">
+                        Professeur
+                    </label>
+                    <label for="student" class="">
+                    <input type="radio" name="userType" id="student" value="student" checked>
+                        Elève
+                    </label>
                 </div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password" required>
+                <label for="passwordConfirmation">Confirmez votre mot de passe</label>
+                <input type="password" name="passwordConfirmation" id="passwordConfirmation" required>
                 <% if(typeof(alertMessage) != 'undefined') { %>
-                <div class="login-section__alert"><%= alertMessage %></div>
-                <% } %>
-                <input type="submit" placeholder="S'inscrire" class="submit">
-            </form><!-- login form end -->
-        </section>
-        <div class="background-decoration"></div>
+                    <div class="subscribe__form__alert"><%= alertMessage %></div>
+                <% } %> 
+                <!-- Subscribe form submit button start-->       
+                <input type="submit" placeholder="S'inscrire" class="subscribe__form__button-subscribe"><!-- Subscribe form submit button end -->
+                <a href="#" class="subscribe__form__login-link">Se connecter</a>
+            </form><!-- Subscribe form end -->
+        </section><!-- subscribe section end-->
     </main>
 </body>
-
 </html>
