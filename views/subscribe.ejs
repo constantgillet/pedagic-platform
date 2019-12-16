@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <title>Plateforme pédagique | S'inscrire</title>
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/subscribe.css">
 </head>
+
 <body>
     <main>
         <!-- subscribe section start-->
@@ -21,13 +23,15 @@
                 <input type="text" name="firstName" id="firstName" required>
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" required>
-                <div class="">
-                    <label for="teacher" class="">
-                    <input type="radio" name="userType" id="teacher" value="teacher">
+                <div class="subscribe__form__userType__teacher">
+                    <label for="teacher">
+                        <input type="radio" name="userType" id="teacher" value="teacher">
                         Professeur
                     </label>
-                    <label for="student" class="">
-                    <input type="radio" name="userType" id="student" value="student" checked>
+                </div>
+                <div class="subscribe__form__userType__student">
+                    <label for="student">
+                        <input type="radio" name="userType" id="student" value="student" checked>
                         Elève
                     </label>
                 </div>
@@ -36,13 +40,15 @@
                 <label for="passwordConfirmation">Confirmez votre mot de passe</label>
                 <input type="password" name="passwordConfirmation" id="passwordConfirmation" required>
                 <% if(typeof(alertMessage) != 'undefined') { %>
-                    <div class="subscribe__form__alert"><%= alertMessage %></div>
-                <% } %> 
-                <!-- Subscribe form submit button start-->       
-                <input type="submit" placeholder="S'inscrire" class="subscribe__form__button-subscribe"><!-- Subscribe form submit button end -->
+                <div class="subscribe__form__alert"><%= alertMessage %></div>
+                <% } %>
+                <!-- Subscribe form submit button start-->
+                <input type="submit" placeholder="S'inscrire" class="subscribe__form__button-subscribe">
+                <!-- Subscribe form submit button end -->
                 <a href="#" class="subscribe__form__login-link">Se connecter</a>
             </form><!-- Subscribe form end -->
         </section><!-- subscribe section end-->
     </main>
 </body>
+
 </html>

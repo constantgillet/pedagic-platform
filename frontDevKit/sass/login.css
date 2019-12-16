@@ -1,0 +1,121 @@
+body {
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.background-decoration {
+  width: 261vh;
+  height: 261vh;
+  left: 70%;
+  top: -70%;
+  background: #4CAEE1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+
+.login-section {
+  top: 50%;
+  left: 27%;
+  position: absolute;
+  width: 49vh;
+  z-index: 10;
+  -webkit-transform: translateY(-54%);
+          transform: translateY(-54%);
+}
+
+.login-section__title {
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 43px;
+  text-align: center;
+}
+
+.login-section__alert {
+  color: #F13B3B;
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+.login-section .login-form__main-part {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.login-section .login-form__first-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-section .login-form__first-part label {
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+
+.login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
+  height: 3vh;
+  width: 40vh;
+  border: solid black 1px;
+  border-radius: 8px;
+  font-size: 1.2em;
+  padding-left: 20px;
+  color: #424242;
+}
+
+.login-section .login-form [type=image] {
+  position: absolute;
+  height: 3vh;
+  width: 3vh;
+  margin-left: 78%;
+  margin-top: 81%;
+}
+
+.login-section .login-form__second-part {
+  position: absolute;
+  right: -130%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.login-section .login-form__second-part img {
+  width: 25vh;
+  height: 31vh;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.login-section .login-form .submit {
+  background: #4CAEE1;
+  border: none;
+  border-radius: 8px;
+  height: 5vh;
+  width: 16vh;
+  font-weight: bold;
+  color: white;
+  font-size: 1.15em;
+  margin-top: 10%;
+  margin-left: 28%;
+}
+/*# sourceMappingURL=login.css.map */
