@@ -18,7 +18,7 @@ body {
 
 .login-section {
     top: 50%;
-    left: 7%;
+    left: 27%;
     position: absolute;
     width: 49vh;
     z-index: 10;
@@ -90,41 +90,6 @@ body {
             right: -130%;
             top: 50%;
             transform: translateY(-50%);
-
-            [type=radio] { 
-                position: absolute;
-                opacity: 0;
-                width: 0;
-                height: 0;
-              }
-              
-            [type=radio] + img {
-                cursor: pointer;
-                border: 1.5px solid #C2C2C2;
-                border-radius: 8px;
-            }
-              
-            [type=radio]:checked + img {
-                border: 1.5px solid hsl(0, 0%, 0%);
-                border-radius: 8px;
-            }
-        }
-
-        &__radio-button {
-            border: solid 1px #C2C2C2;
-            border-radius: 8px;
-            padding: 12px 46px;
-            margin-top: 6%;
-            margin-left:2% ;
-
-        
-        }
-
-        &__radio-button-div {
-            margin-top: 11%;
-            margin-bottom: 7%;
-            width: 43vh;
-            margin-left: -3%;
         }
 
         .submit {

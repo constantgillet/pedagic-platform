@@ -2,9 +2,11 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const session = require('express-session')
 
-const subscribeRouter = require('./routes/subscribeRouter');
-const loginRouter = require('./routes/loginRouter');
+const subscribeRouter = require('./routes/subscribeRouter')
+const loginRouter = require('./routes/loginRouter')
+const chooseAvatarRouter = require('./routes/chooseAvatarRouter')
 const indexRouter = require('./routes/indexRouter')
+
 const app = express()
 
 //eJS
@@ -18,13 +20,14 @@ app.use(session({
 }))
 
 //To use post
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use('/subscribe', subscribeRouter);
-app.use('/login', loginRouter);
+app.use('/subscribe', subscribeRouter)
+app.use('/login', loginRouter)
+app.use('/chooseAvatar', chooseAvatarRouter)
 app.use('', indexRouter)
 
-app.use(express.static('public'));
+app.use(express.static('public'))
 
 app.listen(3000)
