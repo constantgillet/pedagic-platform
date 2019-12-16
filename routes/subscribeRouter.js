@@ -61,10 +61,24 @@ router.post('/', (req, res) => {
                       //Insering datas
                       db.query(sql, (err, result) => {
                         if (err) throw err
-                          console.log('1 record inserted')
-                          //res.render('subscribe', { alertMessage: 'Votre compte a été créé.'})
-                          res.redirect('/choseAvatar')
+
+                        //Select userId request
+                        const sql = `SELECT userId FROM users WHERE userEmail = '${ email }'`
+                        
+                        //Selecting user Id 
+                        db.query(sql, (err, result) => {
+                          if(!err){
+                            req.session.loggedIn = true
+                            req.session.userId = JSON.stringify(result[0].userId)
+                            res.redirect('/chooseAvatar')
+                          }
+                          else {
+                            throw err
+                            console.log(err)
+                          }
+                        })
                       })
+
                     }
                     else {
                       res.render('subscribe', { alertMessage: 'Cet email a déjà été utilisé.'})
