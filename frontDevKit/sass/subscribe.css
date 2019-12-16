@@ -84,6 +84,13 @@ main {
   margin-left: -53%;
 }
 
+.subscribe__form__userType__teacher .teacher {
+  width: 70vh;
+  position: absolute;
+  margin-right: 10px;
+  top: 48.5%;
+}
+
 .subscribe__form__userType__student {
   width: 23vh;
   height: 5vh;
@@ -94,6 +101,13 @@ main {
           box-sizing: border-box;
   border-radius: 8px;
   margin-left: 53%;
+}
+
+.subscribe__form__userType__student .student {
+  width: 70vh;
+  position: absolute;
+  margin-right: 10px;
+  top: 48.5%;
 }
 
 .subscribe__form [type=text], .subscribe__form [type=email], .subscribe__form [type=password] {
@@ -109,6 +123,7 @@ main {
 .subscribe__form [type=radio] {
   text-align: left;
   margin-top: 8%;
+  width: 6vh;
 }
 
 .subscribe__form__alert {
