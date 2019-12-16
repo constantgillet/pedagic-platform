@@ -3,7 +3,7 @@ body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
   object-fit: cover;
-  font-size: 1em; }
+  font-size: 1rem; }
 
 main {
   height: 100vh;
@@ -24,7 +24,7 @@ main {
   justify-content: center;
   flex-direction: column; }
   .subscribe__title {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     font-weight: bolder;
     margin-top: 4vh;
     margin-bottom: 15px; }
@@ -35,7 +35,7 @@ main {
     .subscribe__form label {
       text-align: left;
       width: 100%;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       margin-top: 17px;
       margin-bottom: 5px; }
     .subscribe__form__userType__teacher {
@@ -71,7 +71,7 @@ main {
       width: 458px;
       border: solid black 1px;
       border-radius: 8px;
-      font-size: 1.2em;
+      font-size: 1.2rem;
       padding-left: 20px;
       color: #424242; }
     .subscribe__form [type=radio] {
@@ -80,7 +80,7 @@ main {
       width: 6vh; }
     .subscribe__form__alert {
       padding-top: 1.8vh;
-      font-size: 1.1em;
+      font-size: 1.1rem;
       color: red; }
     .subscribe__form__button-subscribe {
       width: 196px;
@@ -97,6 +97,6 @@ main {
       color: #424242;
       margin-top: 1.7vh;
       margin-bottom: 1.7vh;
-      font-size: 1.2em; }
+      font-size: 1.2rem; }
 
 /*# sourceMappingURL=subscribe.css.map */
