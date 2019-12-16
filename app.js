@@ -4,6 +4,7 @@ const session = require('express-session')
 
 const subscribeRouter = require('./routes/subscribeRouter');
 const loginRouter = require('./routes/loginRouter');
+const indexRouter = require('./routes/indexRouter')
 const app = express()
 
 //eJS
@@ -22,6 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/subscribe', subscribeRouter);
 app.use('/login', loginRouter);
+app.use('', indexRouter)
 
 app.use(express.static('public'));
 
