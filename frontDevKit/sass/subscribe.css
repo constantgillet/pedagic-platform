@@ -4,7 +4,7 @@ body {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 main {
@@ -115,7 +115,7 @@ main {
   width: 458px;
   border: solid black 1px;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   padding-left: 20px;
   color: #424242;
 }
@@ -128,7 +128,7 @@ main {
 
 .subscribe__form__alert {
   padding-top: 1.8vh;
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: red;
 }
 
@@ -149,6 +149,6 @@ main {
   color: #424242;
   margin-top: 1.7vh;
   margin-bottom: 1.7vh;
-  font-size: 1.2rem;
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=subscribe.css.map */

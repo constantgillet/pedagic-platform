@@ -23,8 +23,13 @@ main {
 }
 
 .login-section {
+  top: 50%;
+  position: absolute;
+  z-index: 10;
+  -webkit-transform: translateY(-54%);
+          transform: translateY(-54%);
   background: #FDFDFD;
-  width: 767px;
+  width: 79vh;
   height: 90vh;
   border-radius: 6px;
   -webkit-box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
@@ -44,21 +49,14 @@ main {
           flex-direction: column;
 }
 
-.login-section {
-  top: 50%;
-  left: 27%;
-  position: absolute;
-  width: 49vh;
-  z-index: 10;
-  -webkit-transform: translateY(-54%);
-          transform: translateY(-54%);
-}
-
 .login-section__title {
   font-weight: 900;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 43px;
   text-align: center;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
 }
 
 .login-section__alert {
@@ -101,7 +99,7 @@ main {
 }
 
 .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
-  height: 3vh;
+  height: 4.2vh;
   width: 40vh;
   border: solid black 1px;
   border-radius: 8px;
@@ -114,8 +112,8 @@ main {
   position: absolute;
   height: 3vh;
   width: 3vh;
-  margin-left: 78%;
-  margin-top: 81%;
+  left: 88%;
+  top: 81%;
 }
 
 .login-section .login-form__second-part {
