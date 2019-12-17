@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Plateforme pédagique | S'inscrire</title>
+    <title>Plateforme pédagique | Se connecter</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -26,8 +26,8 @@
                         <input type="image" name="image" id="image" src=images/eye.svg> <!-- Left form part end -->
                         <!-- Right form part -->
                 </div>
-                <% if(typeof(message) != 'undefined') { %>
-                <div class="login-section__alert"><%= message %></div>
+                <% if(typeof(alertMessage) != 'undefined') { %>
+                <div class="login-section__form__alert"><%= alertMessage %></div>
                 <% } %>
                 <input type="submit" placeholder="S'inscrire" class="submit">
             </form><!-- login form end -->
