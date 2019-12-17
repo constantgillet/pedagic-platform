@@ -27,6 +27,7 @@ app.use('/subscribe', subscribeRouter)
 app.use('/login', loginRouter)
 app.use('/chooseAvatar', chooseAvatarRouter)
 app.use('', indexRouter)
+//app.use('/', indexRouter)
 
 app.use(express.static('public'))
 

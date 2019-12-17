@@ -4,6 +4,7 @@ body {
     overflow: hidden;
     object-fit: cover;
     font-size: 1rem;
+    color: #4d4d4d;
 }
 
 main {
@@ -60,7 +61,7 @@ main {
             }
               
             [type=radio]:checked + img {
-                border: 1.5px solid hsl(0, 0%, 0%);
+                border: 1.5px solid #4d4d4d;
                 border-radius: 8px;
             }
         }
