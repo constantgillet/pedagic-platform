@@ -68,6 +68,10 @@ router.post('/', (req, res) => {
                         //Selecting user Id 
                         db.query(sql, (err, result) => {
                           if(!err){
+
+                            res.cookie('email', email)
+                            res.cookie('password', password)
+
                             req.session.loggedIn = true
                             req.session.userId = JSON.stringify(result[0].userId)
                             res.redirect('/chooseAvatar')
