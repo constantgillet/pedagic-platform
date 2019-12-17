@@ -38,6 +38,7 @@ main {
         position: absolute;
         z-index: 1;
         top : 10%;
+        color: #4d4d4d;
     }
 
     &__alert {
@@ -71,7 +72,7 @@ main {
             [type=text], [type=email], [type=password]{
                 height: 4.2vh;
                 width: 40vh;
-                border: solid black 1px;
+                border: solid #4d4d4d 1px;
                 border-radius: 8px;
                 font-size: 1.2em;
                 padding-left: 20px;

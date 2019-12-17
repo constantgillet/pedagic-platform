@@ -3,7 +3,8 @@ body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
   object-fit: cover;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #4d4d4d; }
 
 main {
   height: 100vh;
@@ -47,7 +48,7 @@ main {
       border: 1.5px solid #C2C2C2;
       border-radius: 8px; }
     .chooseAvatar__form .div-labels [type=radio]:checked + img {
-      border: 1.5px solid black;
+      border: 1.5px solid #4d4d4d;
       border-radius: 8px; }
     .chooseAvatar__form__button-continue {
       width: 196px;

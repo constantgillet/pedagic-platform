@@ -3,7 +3,8 @@ body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
   object-fit: cover;
-  font-size: 1em; }
+  font-size: 1em;
+  color: #4d4d4d; }
 
 main {
   height: 100vh;
@@ -69,7 +70,7 @@ main {
     .subscribe__form [type=text], .subscribe__form [type=email], .subscribe__form [type=password] {
       height: 4.2vh;
       width: 458px;
-      border: solid black 1px;
+      border: solid #4d4d4d 1px;
       border-radius: 8px;
       font-size: 1.2em;
       padding-left: 20px;

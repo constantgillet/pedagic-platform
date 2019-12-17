@@ -34,7 +34,8 @@ main {
     text-align: center;
     position: absolute;
     z-index: 1;
-    top: 13%; }
+    top: 10%;
+    color: #4d4d4d; }
   .login-section__alert {
     color: #F13B3B;
     margin-top: 15px;
@@ -56,7 +57,7 @@ main {
     .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
       height: 4.2vh;
       width: 40vh;
-      border: solid black 1px;
+      border: solid #4d4d4d 1px;
       border-radius: 8px;
       font-size: 1.2em;
       padding-left: 20px;
@@ -72,11 +73,6 @@ main {
     right: -130%;
     top: 50%;
     transform: translateY(-50%); }
-    .login-section .login-form__second-part img {
-      width: 25vh;
-      height: 31vh;
-      margin-right: 10px;
-      margin-left: 10px; }
   .login-section .login-form .submit {
     background: #4CAEE1;
     border: none;
@@ -86,7 +82,7 @@ main {
     font-weight: bold;
     color: white;
     font-size: 1.15rem;
-    margin-top: 18%;
+    margin-top: 10%;
     margin-left: 28%; }
     
     .subscribe__form__login-link {
