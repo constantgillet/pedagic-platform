@@ -1,0 +1,232 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    object-fit: cover;
+    font-size: 1em;
+    background: #F5F5F5;
+    color: #4D4D4D;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.card {
+    width: 80vw;
+    height: 70vh;
+    padding: 0 25px 25px 25px; 
+    border-radius: 6px;
+    background: rgb(248, 248, 248);
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+
+    
+}
+
+.mission {
+    position: relative;
+    background-size: 100%;
+    object-fit: cover;
+    background: rgba(248, 248, 248, 0.8);
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        background-image: url('../images/serment-du-jeu-de-paume.png');
+        background-size: 140%;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        border-radius: 6px;
+        z-index: -1;
+    }
+
+    &__circle--current {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: #4CAEE1;
+        border-radius: 50%;
+    }
+
+    &__line--current {
+        position: absolute;
+        width: 3px;
+        height: 109px;
+        background: #4CAEE1;
+        border-radius: 18px;
+    }
+
+    &__circle--unlocked {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: #91E090;
+        border-radius: 50%;
+    }
+
+    &__line--unlocked {
+        position: absolute;
+        width: 3px;
+        height: 109px;
+        background: rgb(167, 171, 173);
+        border-radius: 18px;
+    }
+
+    &__circle--locked {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background: rgb(167, 171, 173);
+        border-radius: 50%;
+    }
+
+    &__line--locked {
+        position: absolute;
+        width: 3px;
+        height: 109px;
+        background: rgb(167, 171, 173);
+        border-radius: 18px;
+    }
+
+    &__circle__first__mission {
+        left: 20px;
+        top: 88px;
+    }
+
+    &__line__first__mission {
+        left: 24px;
+        top: 104px;
+        height: 129px;
+    }
+
+    &__circle__second__mission {
+        left: 20px;
+        top: 237px;
+    }
+
+    &__line__second__mission {
+        left: 24px;
+        top: 253px;
+        height: 155px;
+    }
+
+    &__circle__third__mission {
+        left: 20px;
+        top: 412px;
+    }
+
+    &__line__third__mission {
+        left: 24px;
+        top: 427px;
+        height: 127px;
+    }
+}
+
+.character {
+    position: relative;
+
+    .experience {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        left: calc( 50% - 50px / 2);
+        top: 80%;
+        border: 3px solid #4CAEE1;
+        border-radius: 50%;
+        box-sizing: border-box;
+        font-size: 1.8em;
+
+        &__progress {
+            position: absolute;
+            left: calc( 50% - 200px / 2);
+            top: 90%;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        &__bar {
+            position: absolute;
+            width: 240px;
+            height: 6px;
+            left: calc( 50% - 240px / 2);
+            top: 95%;
+
+            background: #D7DDE0;
+            border-radius: 2px;
+
+            &__progress {
+                position: absolute;
+                width: 20%;
+                height: 100%;
+                left: 0;
+                top: 0;
+
+                background: #4CAEE1;
+                border-radius: 18px;
+            }
+        }
+    }
+}
+
+
+.footer__nav {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF;
+
+    &__items {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        padding: 0 30px 20px 30px;
+        color: #4CAEE1;
+    }
+
+    &__mission {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        padding: 0 30px 20px 30px;
+        color: #D7DDE0;
+    }
+
+    &__profil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        padding: 0 30px 20px 30px;
+        color: #D7DDE0;
+    }
+}
