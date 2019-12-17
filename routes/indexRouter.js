@@ -1,9 +1,23 @@
 const express = require('express')
 const router = express.Router()
 
-/* GET home page. */
+/* GET Index page. */
 router.get('/', (req, res) => {
-    res.render('index')
+    
+    //We check if the session exist else we redirect if 
+    if(typeof(req.session.loggedIn) != 'undefined') {
+        
+        if(req.session.loggedIn) {
+
+           res.render('index')
+        }
+        else {
+            res.redirect('login')
+        }
+    }
+    else {
+        res.redirect('login')
+    }
 })
 
 
