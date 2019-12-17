@@ -51,25 +51,9 @@ main {
 
 .mission {
     position: relative;
-    background-size: 100%;
+    background-image: url('../images/serment-du-jeu-de-paume.png');
+    background-size: cover;
     object-fit: cover;
-    background: rgba(248, 248, 248, 0.8);
-
-    &__img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-
-        background-image: url('../images/serment-du-jeu-de-paume.png');
-        background-size: 140%;
-        background-repeat: no-repeat;
-        background-position: center;
-        object-fit: cover;
-        border-radius: 6px;
-        z-index: -1;
-    }
 
     &__circle--current {
         position: absolute;
@@ -239,7 +223,7 @@ main {
         width: 80px;
         height: 80px;
         padding: 0 30px 20px 30px;
-        color: #4CAEE1;
+        fill: #4CAEE1;
     }
 
     &__mission {
@@ -249,7 +233,7 @@ main {
         width: 80px;
         height: 80px;
         padding: 0 30px 20px 30px;
-        color: #D7DDE0;
+        fill: #D7DDE0;
     }
 
     &__profil {
@@ -259,6 +243,6 @@ main {
         width: 80px;
         height: 80px;
         padding: 0 30px 20px 30px;
-        color: #D7DDE0;
+        fill: #D7DDE0;
     }
 }

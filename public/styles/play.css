@@ -11,133 +11,53 @@ body {
 
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 90vh; }
 
-.card {
-  width: 80vw;
-  height: 70vh;
-  padding: 0 25px 25px 25px;
-  border-radius: 6px;
-  background: #f8f8f8;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14); }
-
-.mission {
-  position: relative;
-  background-size: 100%;
+.game__zone {
+  width: 90vw;
+  height: 80vh;
+  background-image: url("../images/serment-du-jeu-de-paume-full.png");
+  background-size: cover;
   object-fit: cover;
-  background: rgba(248, 248, 248, 0.8); }
-  .mission__img {
+  text-align: center;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14); }
+  .game__zone__time__bar {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/serment-du-jeu-de-paume.png");
-    background-size: 140%;
-    background-repeat: no-repeat;
-    background-position: center;
-    object-fit: cover;
-    border-radius: 6px;
-    z-index: -1; }
-  .mission__circle--current {
+    width: 80%;
+    height: 10px;
+    left: 10%;
+    top: 100px;
+    background: #D7DDE0;
+    border-radius: 2px; }
+    .game__zone__time__bar__active {
+      position: absolute;
+      width: 10%;
+      height: 10px;
+      left: 0;
+      top: 0;
+      background: #4CAEE1;
+      border-radius: 10px; }
+  .game__zone h2 {
     position: absolute;
-    width: 12px;
-    height: 12px;
-    background: #4CAEE1;
-    border-radius: 50%; }
-  .mission__line--current {
-    position: absolute;
-    width: 3px;
-    height: 109px;
-    background: #4CAEE1;
-    border-radius: 18px; }
-  .mission__circle--unlocked {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: #91E090;
-    border-radius: 50%; }
-  .mission__line--unlocked {
-    position: absolute;
-    width: 3px;
-    height: 109px;
-    background: #a7abad;
-    border-radius: 18px; }
-  .mission__circle--locked {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: #a7abad;
-    border-radius: 50%; }
-  .mission__line--locked {
-    position: absolute;
-    width: 3px;
-    height: 109px;
-    background: #a7abad;
-    border-radius: 18px; }
-  .mission__circle__first__mission {
-    left: 20px;
-    top: 88px; }
-  .mission__line__first__mission {
-    left: 24px;
-    top: 104px;
-    height: 129px; }
-  .mission__circle__second__mission {
-    left: 20px;
-    top: 237px; }
-  .mission__line__second__mission {
-    left: 24px;
-    top: 253px;
-    height: 155px; }
-  .mission__circle__third__mission {
-    left: 20px;
-    top: 412px; }
-  .mission__line__third__mission {
-    left: 24px;
-    top: 427px;
-    height: 127px; }
-
-.character {
-  position: relative; }
-  .character .experience {
+    width: 300px;
+    height: 30px;
+    left: calc( 50% - 300px / 2);
+    top: 25%;
+    font-size: 2em; }
+  .game__zone__timer__zone {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50px;
-    height: 50px;
-    left: calc( 50% - 50px / 2);
-    top: 80%;
-    border: 3px solid #4CAEE1;
+    width: 70px;
+    height: 70px;
+    left: calc( 50% - 80px / 2);
+    top: 75%;
+    border: 5px solid #b5b7b9;
     border-radius: 50%;
-    box-sizing: border-box;
-    font-size: 1.8em; }
-    .character .experience__progress {
-      position: absolute;
-      left: calc( 50% - 200px / 2);
-      top: 90%;
-      width: 200px;
-      height: 30px;
-      text-align: center;
-      font-size: 1.1em; }
-    .character .experience__bar {
-      position: absolute;
-      width: 240px;
-      height: 6px;
-      left: calc( 50% - 240px / 2);
-      top: 95%;
-      background: #D7DDE0;
-      border-radius: 2px; }
-      .character .experience__bar__progress {
-        position: absolute;
-        width: 20%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: #4CAEE1;
-        border-radius: 18px; }
+    font-size: 1.4em; }
 
 .footer__nav {
   position: absolute;
@@ -159,7 +79,7 @@ main {
     width: 80px;
     height: 80px;
     padding: 0 30px 20px 30px;
-    color: #4CAEE1; }
+    fill: #D7DDE0; }
   .footer__nav__mission {
     display: flex;
     justify-content: center;
@@ -167,7 +87,7 @@ main {
     width: 80px;
     height: 80px;
     padding: 0 30px 20px 30px;
-    color: #D7DDE0; }
+    fill: #4CAEE1; }
   .footer__nav__profil {
     display: flex;
     justify-content: center;
@@ -175,6 +95,6 @@ main {
     width: 80px;
     height: 80px;
     padding: 0 30px 20px 30px;
-    color: #D7DDE0; }
+    fill: #D7DDE0; }
 
 /*# sourceMappingURL=play.css.map */
