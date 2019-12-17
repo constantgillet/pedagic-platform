@@ -6,7 +6,7 @@ body {
   font-size: 1rem; }
 
 main {
-  height: 198vh;
+  height: 207vh;
   width: 100vw;
   background: #F5F5F5;
   display: flex;
@@ -14,10 +14,6 @@ main {
   align-items: center; }
 
 .login-section {
-<<<<<<< HEAD
-=======
-  top: 50%;
->>>>>>> 4dc6808cbc97e96357fd9e500cc427776664539f
   position: absolute;
   z-index: 10;
   transform: translateY(-54%);
@@ -37,8 +33,7 @@ main {
     text-align: center;
     position: absolute;
     z-index: 1;
-    top: 10%;
-    color: #4d4d4d; }
+    top: 12%; }
   .login-section__alert {
     color: #F13B3B;
     margin-top: 15px;
@@ -60,7 +55,7 @@ main {
     .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
       height: 4.2vh;
       width: 40vh;
-      border: solid #4d4d4d 1px;
+      border: solid black 1px;
       border-radius: 8px;
       font-size: 1.2em;
       padding-left: 20px;
@@ -85,12 +80,15 @@ main {
     font-weight: bold;
     color: white;
     font-size: 1.15rem;
-    margin-top: 10%;
+    margin-top: 18%;
     margin-left: 28%; }
-    .login-section .login-form .submit__login-link {
-      color: #424242;
-      margin-top: 1.7vh;
-      margin-bottom: 1.7vh;
-      font-size: 1.2em; }
+  .login-section .login-form a {
+    color: #424242;
+    margin-top: 1.7vh;
+    margin-bottom: 1.7vh;
+    font-size: 1.2em;
+    position: absolute;
+    top: 72%;
+    left: 43%; }
 
 /*# sourceMappingURL=login.css.map */
