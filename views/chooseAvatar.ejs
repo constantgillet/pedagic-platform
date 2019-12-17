@@ -6,11 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/subscribe.css">
+    <link rel="stylesheet" href="styles/chooseAvatar.css">
 </head>
 <body>
     <main>
-        
+        <!-- subscribe section start-->
+        <section class="chooseAvatar">
+            <h1 class="chooseAvatar__title">Choisissez votre avatar</h1>
+            <form class="chooseAvatar__form" method="POST" target="">
+                <!-- Choose gender labels start -->
+                <div class="div-labels">
+                    <label>
+                        <input type="radio" name="gender" value="male" checked>
+                        <img src="images/maleAvatar.svg" class="maleImage">
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        <img src="images/femaleAvatar.svg" class="femaleImage">
+                    </label>
+                </div><!-- Choose gender labels end -->
+                <input type="submit" placeholder="Continuer" class="chooseAvatar__form__button-continue">
+            </form>
+        </section><!-- subscribe section end-->
     </main>
 </body>
 </html>
