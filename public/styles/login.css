@@ -3,7 +3,8 @@ body {
   font-family: 'Lato', sans-serif;
   overflow: hidden;
   object-fit: cover;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #4C4C4C; }
 
 main {
   height: 100vh;
@@ -57,7 +58,7 @@ main {
       border-radius: 8px;
       font-size: 1.2em;
       padding-left: 20px;
-      color: #424242; }
+      color: #4C4C4C; }
   .login-section .login-form [type=image] {
     position: absolute;
     height: 3vh;
