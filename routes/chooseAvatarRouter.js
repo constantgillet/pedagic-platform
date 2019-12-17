@@ -8,11 +8,24 @@ router.get('/', (req, res) => {
     if(typeof(req.session.loggedIn) != 'undefined') {
         
         if(req.session.loggedIn) {
-            res.render('chooseAvatar')
-            console.log(req.session.loggedIn)  
+
+            //We check the user has already registrer an avatar
+            const sql = `SELECT avatarOwnerId FROM avatars WHERE avatarOwnerId = '${ req.session.userId }'`
+              
+            //Selecting data
+            db.query(sql, (err, result) => {
+                if (err) throw err
+
+                //If user has not already an avatar
+                if(result.length == 0) {
+                    res.render('chooseAvatar')
+                }
+                else {
+                    res.redirect('/')
+                }
+            })
         }
         else {
-            console.log(req.session.loggedIn)
             res.redirect('login')
         }
     }
@@ -26,9 +39,14 @@ router.post('/', (req, res) => {
     if(typeof(req.body.gender) != 'undefined') {
         if(req.body.gender == 'male' || req.body.gender == 'female') {
             
-            const sql = `INSERT INTO avatars (gender) VALUES ('${ req.body.gender }')`
+            const sql = `INSERT INTO avatars (avatarOwnerId, avatarGender) VALUES ('${ req.session.userId }', '${ req.body.gender }')`
             
-            //We put into the database
+            //Insering datas
+            db.query(sql, (err, result) => {
+                if (err) throw err
+                console.log('Avatar has been added into the database')
+            })
+
         }
     }
 })

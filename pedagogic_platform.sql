@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 16 déc. 2019 à 12:15
+-- Généré le :  mar. 17 déc. 2019 à 10:40
 -- Version du serveur :  5.7.21
 -- Version de PHP :  5.6.35
 
@@ -25,6 +25,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Structure de la table `avatars`
+--
+
+DROP TABLE IF EXISTS `avatars`;
+CREATE TABLE IF NOT EXISTS `avatars` (
+  `avatarOwnerId` int(11) NOT NULL,
+  `avatarGender` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`avatarOwnerId`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Déchargement des données de la table `avatars`
+--
+
+INSERT INTO `avatars` (`avatarOwnerId`, `avatarGender`) VALUES
+(28, 'male'),
+(26, 'female'),
+(25, 'female'),
+(29, 'female');
+
+-- --------------------------------------------------------
+
+--
 -- Structure de la table `users`
 --
 
@@ -37,19 +60,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userPassword` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `userType` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Déchargement des données de la table `users`
 --
 
 INSERT INTO `users` (`userId`, `userEmail`, `userName`, `userFirstName`, `userPassword`, `userType`) VALUES
-(5, 'constant.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'student'),
-(6, 'constant.gillet@hetic.nit', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'student'),
-(7, 'rider.constant@gmail.com', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(8, 'constah.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(9, 'constkjvshsejfhant.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(10, 'constkjvshsejxqhant.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher');
+(29, 'constaqzdqzdnt.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
+(28, 'constanssqsst.gillet@hetic.net', 'GILLET', 'test', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
+(27, 'rider.consfesfstant@gmail.com', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
+(26, 'constaddznt.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
+(25, 'constant.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
