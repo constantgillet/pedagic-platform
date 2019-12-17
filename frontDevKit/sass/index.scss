@@ -204,8 +204,16 @@ main {
     }
 }
 
-.trophies {
-    
+.success__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+    &__icon {
+        padding: 30px 15px 20px 15px;
+    }
 }
 
 .footer__nav {

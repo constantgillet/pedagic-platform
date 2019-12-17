@@ -154,6 +154,15 @@ main {
         background: #4CAEE1;
         border-radius: 18px; }
 
+.success__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px; }
+  .success__container__icon {
+    padding: 30px 15px 20px 15px; }
+
 .footer__nav {
   position: absolute;
   width: 100%;
