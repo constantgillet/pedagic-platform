@@ -52,7 +52,7 @@ main {
         width: 70vh;
         position: absolute;
         margin-right: 10px;
-        top: 47.5%; }
+        top: 47.3%; }
     .subscribe__form__userType__student {
       width: 23vh;
       height: 5vh;
@@ -66,7 +66,7 @@ main {
         width: 70vh;
         position: absolute;
         margin-right: 10px;
-        top: 47.5%; }
+        top: 47.3%; }
     .subscribe__form [type=text], .subscribe__form [type=email], .subscribe__form [type=password] {
       height: 4.2vh;
       width: 458px;
