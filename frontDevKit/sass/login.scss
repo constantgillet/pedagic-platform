@@ -64,8 +64,8 @@ main {
             label {
                 font-weight: normal;
                 font-size: 1.3rem;
-                margin-top: 16px;
-                margin-bottom: 5px;
+                margin-top: 15%;
+                margin-bottom: 2%;
             }
 
             [type=text], [type=email], [type=password]{
@@ -83,17 +83,10 @@ main {
             height: 3vh;
             width: 3vh;
             left: 88%;
-            top: 81%;
+            top: 86%;
            }
 
         &__second-part {
-
-            img {
-                width: 25vh;
-                height:  31vh;
-                margin-right: 10px;
-                margin-left: 10px;
-            }
 
             position: absolute;
             right: -130%;

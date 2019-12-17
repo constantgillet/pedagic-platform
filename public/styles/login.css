@@ -34,7 +34,7 @@ main {
     text-align: center;
     position: absolute;
     z-index: 1;
-    top: 10%; }
+    top: 13%; }
   .login-section__alert {
     color: #F13B3B;
     margin-top: 15px;
@@ -51,8 +51,8 @@ main {
     .login-section .login-form__first-part label {
       font-weight: normal;
       font-size: 1.3rem;
-      margin-top: 16px;
-      margin-bottom: 5px; }
+      margin-top: 15%;
+      margin-bottom: 2%; }
     .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
       height: 4.2vh;
       width: 40vh;
@@ -66,7 +66,7 @@ main {
     height: 3vh;
     width: 3vh;
     left: 88%;
-    top: 81%; }
+    top: 86%; }
   .login-section .login-form__second-part {
     position: absolute;
     right: -130%;
@@ -86,7 +86,7 @@ main {
     font-weight: bold;
     color: white;
     font-size: 1.15rem;
-    margin-top: 10%;
+    margin-top: 18%;
     margin-left: 28%; }
 
 /*# sourceMappingURL=login.css.map */
