@@ -6,7 +6,7 @@ body {
   font-size: 1rem; }
 
 main {
-  height: 100vh;
+  height: 198vh;
   width: 100vw;
   background: #F5F5F5;
   display: flex;
@@ -14,7 +14,6 @@ main {
   align-items: center; }
 
 .login-section {
-  top: 54%;
   position: absolute;
   z-index: 10;
   transform: translateY(-54%);
