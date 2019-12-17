@@ -14,6 +14,10 @@ main {
   align-items: center; }
 
 .login-section {
+<<<<<<< HEAD
+=======
+  top: 50%;
+>>>>>>> 4dc6808cbc97e96357fd9e500cc427776664539f
   position: absolute;
   z-index: 10;
   transform: translateY(-54%);
@@ -83,16 +87,10 @@ main {
     font-size: 1.15rem;
     margin-top: 10%;
     margin-left: 28%; }
-    
-    .subscribe__form__login-link {
+    .login-section .login-form .submit__login-link {
       color: #424242;
       margin-top: 1.7vh;
       margin-bottom: 1.7vh;
-      font-size: 1.2em;
-      top: 73%;
-    left: 43%;
-    position: absolute;
-  }
-
+      font-size: 1.2em; }
 
 /*# sourceMappingURL=login.css.map */
