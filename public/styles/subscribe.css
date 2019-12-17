@@ -52,7 +52,7 @@ main {
         width: 70vh;
         position: absolute;
         margin-right: 10px;
-        top: 48.5%; }
+        top: 47.3%; }
     .subscribe__form__userType__student {
       width: 23vh;
       height: 5vh;
@@ -66,7 +66,7 @@ main {
         width: 70vh;
         position: absolute;
         margin-right: 10px;
-        top: 48.5%; }
+        top: 47.3%; }
     .subscribe__form [type=text], .subscribe__form [type=email], .subscribe__form [type=password] {
       height: 4.2vh;
       width: 458px;
@@ -84,10 +84,11 @@ main {
       font-size: 1.1em;
       color: red; }
     .subscribe__form__button-subscribe {
-      width: 196px;
+      width: 16vh;
       height: 5vh;
+      font-weight: bold;
       font-size: 2.1vh;
-      margin-top: 1vh;
+      margin-top: 3vh;
       background: #60B6E3;
       border-radius: 8px;
       color: white;

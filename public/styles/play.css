@@ -46,11 +46,12 @@ main {
     left: calc( 50% - 300px / 2);
     top: 25%;
     font-size: 2em; }
-  .game__zone__timer__zone {
+  .game__zone__timer {
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 70px;
     height: 70px;
     left: calc( 50% - 80px / 2);

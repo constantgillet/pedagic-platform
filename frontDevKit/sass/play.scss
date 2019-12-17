@@ -55,11 +55,12 @@ main {
         font-size: 2em;
     }
 
-    &__timer__zone {
+    &__timer {
         position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         width: 70px;
         height: 70px;
         left: calc( 50% - 80px / 2);
