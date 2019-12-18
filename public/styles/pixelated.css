@@ -1,4 +1,4 @@
-.game__zone__pixelated {
+.game__zone__blur {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -8,7 +8,7 @@
   left: 20vw;
   width: 60vw;
   height: 60vh; }
-  .game__zone__pixelated__img {
+  .game__zone__blur__img {
     width: 40vw;
     height: 40vh;
     margin-bottom: 20px;
@@ -16,14 +16,46 @@
     background-size: 100%;
     background-repeat: no-repeat;
     object-fit: cover;
-    border-radius: 6px;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14); }
-  .game__zone__pixelated__response {
+    border-radius: 6px; }
+    .game__zone__blur__img__blur {
+      width: 40vw;
+      height: 40vh;
+      background-image: url("../images/serment-du-jeu-de-paume-blur.png");
+      background-size: 100%;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      border-radius: 6px;
+      opacity: 1; }
+  .game__zone__blur__response {
     width: 20vw;
     height: 3vh;
     margin-bottom: 10px;
     background: #F9EEC5;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-    border-radius: 4px; }
+    border: 2px solid #F9EEC5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    text-align: center; }
+
+@media screen and (max-width: 400px) {
+  .game__zone__blur {
+    top: 23vh;
+    left: 0;
+    width: 100%;
+    height: 40vh; }
+    .game__zone__blur__img {
+      width: 80%;
+      height: 63%;
+      margin: 0 0 40px 0; }
+      .game__zone__blur__img__blur {
+        width: 100%;
+        height: 100%;
+        opacity: 1; }
+    .game__zone__blur__response {
+      width: 60vw;
+      height: 4vh;
+      margin: 0;
+      font-size: 0.9em; } }
 
 /*# sourceMappingURL=pixelated.css.map */
