@@ -20,8 +20,24 @@
       box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
       border-radius: 4px;
       cursor: pointer;
-
     }
+
+    &__answer1:active{
+      background: #4CAEE1;
+    }
+
+    &__answer2:active{
+      background: #4CAEE1;
+    }
+
+    &__answer3:active{
+      background: #4CAEE1;
+    }
+    
+    &__answer4:active{
+      background: #4CAEE1;
+    }
+
     
     @media screen and (min-width: 200px) and (max-width: 1024px) {
         h1 {
@@ -32,7 +48,7 @@
        &__title h2{
             font-size: 0.7em
         }
-      }
+    }
 
     
     &__answer2{
