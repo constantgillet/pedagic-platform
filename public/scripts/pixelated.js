@@ -18,7 +18,7 @@ class pixelatedGame {
         this.imageBlur = game.querySelector('.game__zone__blur__img__blur')
         this.form = game.querySelector('.game__zone__blur__form')
         this.input = game.querySelector('.game__zone__blur__response')
-        this.timerText = game.querySelector('.js-timer')
+        this.timerText = game.querySelector('.game__zone__timer__number')
         this.timeInterval = null
         this.loadLevel()
         this.timeOut()
@@ -53,20 +53,20 @@ class pixelatedGame {
 
             this.timeInterval = setInterval(() => {
 
-            seconds --
-            opacity = opacity - 0.05
+                seconds --
+                opacity = opacity - 0.05
 
-            //We change the opacity of the image
-            this.imageBlur.style.opacity = opacity
+                //We change the opacity of the image
+                this.imageBlur.style.opacity = opacity
 
-            //We change the text of the seconds
-            this.timerText.innerText = seconds
+                //We change the text of the seconds
+                this.timerText.innerText = seconds
 
-            if(seconds == 0)
-            {
-                alert('Fin du game mon gars')
-                clearInterval(this.timeInterval)
-            }
+                if(seconds == 0)
+                {
+                    alert('Fin du game mon gars')
+                    clearInterval(this.timeInterval)
+                }
         }, 1000);
 
     }
