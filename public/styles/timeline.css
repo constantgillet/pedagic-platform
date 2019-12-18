@@ -1,0 +1,102 @@
+.game__zone .game-timeline {
+  position: absolute;
+  top: 21vh;
+  height: 48vh;
+  width: 90vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .game__zone .game-timeline__arrow {
+    width: 90%;
+    height: 0.4vh;
+    background: #6F6F6F;
+    position: relative;
+    top: -15%; }
+    .game__zone .game-timeline__arrow__top-part {
+      background: #6F6F6F;
+      height: 0.4vh;
+      width: 3vh;
+      transform-origin: right;
+      transform: rotate(45deg);
+      position: absolute;
+      right: 0;
+      top: 25%; }
+    .game__zone .game-timeline__arrow__bottom-part {
+      background: #6F6F6F;
+      height: 0.4vh;
+      width: 3vh;
+      transform-origin: right;
+      transform: rotate(-45deg);
+      position: absolute;
+      right: 0px;
+      top: -25%; }
+    .game__zone .game-timeline__arrow__dates-part {
+      height: 6vh;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      top: -1462%;
+      position: absolute; }
+      .game__zone .game-timeline__arrow__dates-part__date {
+        width: 10vw; }
+    .game__zone .game-timeline__arrow__half-circles-part {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      top: -3px; }
+      .game__zone .game-timeline__arrow__half-circles-part__circle {
+        height: 1vh;
+        width: 2vh;
+        border-top-left-radius: 2vh;
+        border-top-right-radius: 2vh;
+        background: #4CAEE1; }
+    .game__zone .game-timeline__arrow__answer-zones {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      top: 9px; }
+      .game__zone .game-timeline__arrow__answer-zones__answers {
+        height: 10vh;
+        width: 13%;
+        color: #4C4C4C;
+        background: rgba(196, 196, 196, 0.5);
+        border: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px; }
+  .game__zone .game-timeline__answers-list {
+    width: 90%;
+    height: 10.4vh;
+    position: relative;
+    top: 28%;
+    display: flex;
+    margin-top: -2vh;
+    justify-content: space-around; }
+    .game__zone .game-timeline__answers-list__answer {
+      height: 10vh;
+      width: 13%;
+      background: #F9EEC5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      color: #4C4C4C; }
+      .game__zone .game-timeline__answers-list__answer--selected {
+        height: 10vh;
+        width: 13%;
+        background: #F9EEC5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        color: #4C4C4C;
+        border: 4px solid #4CAEE1; }
+
+/*# sourceMappingURL=timeline.css.map */
