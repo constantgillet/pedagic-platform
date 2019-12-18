@@ -65,7 +65,7 @@ main {
     flex-direction: column;
     width: 70px;
     height: 70px;
-    left: calc( 50% - 80px / 2);
+    left: calc( 50% - 70px / 2);
     bottom: 18vh;
     border: 5px solid #b5b7b9;
     border-radius: 50%;
@@ -113,5 +113,67 @@ main {
     @media screen and (min-width: 200px) and (max-width: 1024px) {
       .footer__nav__profil__title h2 {
         font-size: 0.4em; } }
+
+@media screen and (max-width: 400px) {
+  main {
+    height: 90vh;
+    width: 100vw; }
+
+  .game__zone {
+    width: 90vw;
+    height: 87vh; }
+    .game__zone__time__bar {
+      width: 80%;
+      height: 10px;
+      left: 10%;
+      top: 7vh; }
+      .game__zone__time__bar__active {
+        width: 10%;
+        height: 10px;
+        left: 0;
+        top: 0; }
+    .game__zone__title {
+      left: 0;
+      top: 9vh;
+      width: 100vw;
+      height: 10%; }
+      .game__zone__title h2 {
+        font-size: 1.2em;
+        margin: 5px 0 2px 0; }
+      .game__zone__title h4 {
+        font-size: 0.9em;
+        margin: 2px 0; }
+    .game__zone__timer {
+      width: 50px;
+      height: 50px;
+      left: calc( 50% - 50px / 2);
+      bottom: 14vh;
+      border: 3px solid #b5b7b9;
+      border-radius: 50%;
+      font-size: 1em; }
+
+  .footer__nav {
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    bottom: 0;
+    left: 0;
+    background: #FFFFFF; }
+    .footer__nav__items {
+      height: 100%;
+      margin: 0;
+      padding: 10px 0 0 0; }
+    .footer__nav__home {
+      width: 40px;
+      height: 40px;
+      padding: 0 30px 20px 30px; }
+    .footer__nav__mission {
+      width: 40px;
+      height: 40px;
+      padding: 0 30px 20px 30px; }
+    .footer__nav__profil {
+      width: 40px;
+      height: 40px;
+      padding: 0 30px 20px 30px; } }
 
 /*# sourceMappingURL=play.css.map */
