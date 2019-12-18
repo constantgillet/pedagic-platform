@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,wBAAyB;EACrB,QAAQ,EAAE,QAAQ;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,IAAI,EAAE,IAAI;EACV,GAAG,EAAE,IAAI;EAGT,kCAAY;IACR,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,MAAM;IACvB,WAAW,EAAE,MAAM",
+"sources": ["../sass/punchedText.scss"],
+"names": [],
+"file": "punchedText.css"
+}
