@@ -10,19 +10,21 @@
   height: 60vh; }
   .game__zone__blur__img {
     width: 40vw;
-    height: 40vh;
+    height: 36vh;
     margin-bottom: 20px;
     background-image: url("../images/serment-du-jeu-de-paume-game.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
     object-fit: cover;
     border-radius: 6px; }
     .game__zone__blur__img__blur {
-      width: 40vw;
-      height: 40vh;
+      width: 100%;
+      height: 100%;
       background-image: url("../images/serment-du-jeu-de-paume-blur.png");
       background-size: 100%;
       background-repeat: no-repeat;
+      background-position: center;
       object-fit: cover;
       border-radius: 6px;
       opacity: 1; }
@@ -38,7 +40,7 @@
     font-size: 1em;
     text-align: center; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .game__zone__blur {
     top: 23vh;
     left: 0;
