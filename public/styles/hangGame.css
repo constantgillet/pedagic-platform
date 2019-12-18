@@ -1,0 +1,59 @@
+h2 {
+  width: 90vw; }
+
+.game__zone__propositions {
+  position: absolute;
+  left: 10vw;
+  top: 19vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  height: 60vh; }
+
+.game__zone__proposition {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  left: 10vw;
+  top: 20vh;
+  margin: 30px 0;
+  padding: 0 20px;
+  background: #F9EEC5;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+  border: 2px solid #F9EEC5;
+  border-radius: 4px;
+  box-sizing: border-box; }
+  .game__zone__proposition__line {
+    width: 20px;
+    height: 2px;
+    margin-top: 20px;
+    background: #4C4C4C; }
+
+@media screen and (max-width: 450px) {
+  .game__zone__title {
+    top: 15vh; }
+    .game__zone__title h2 {
+      font-size: 1em; }
+    .game__zone__title h4 {
+      font-size: 0.8em; }
+  .game__zone__propositions {
+    top: 20vh;
+    width: 80vw;
+    height: 60vh; }
+  .game__zone__proposition {
+    width: 80%;
+    height: 8%;
+    left: 10vw;
+    top: 20vh;
+    margin: 20px 0;
+    padding: 0 15px; }
+    .game__zone__proposition__line {
+      width: 8%;
+      height: 1px;
+      margin-top: 25px; } }
+
+/*# sourceMappingURL=hangGame.css.map */
