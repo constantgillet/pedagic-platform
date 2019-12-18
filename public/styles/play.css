@@ -110,6 +110,9 @@ main {
     height: 80px;
     padding: 0 30px 20px 30px;
     fill: #D7DDE0; }
+    @media screen and (min-width: 200px) and (max-width: 1024px) {
+      .footer__nav__profil__title h2 {
+        font-size: 0.4em; } }
 
 @media screen and (max-width: 450px) {
   main {
