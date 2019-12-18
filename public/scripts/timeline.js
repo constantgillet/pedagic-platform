@@ -29,28 +29,49 @@ class timeLineGame {
         this.levelToCharge = levelToCharge
         this.halfCirclePart = this.game.querySelector('.game-timeline__arrow__half-circles-part')
         this.arrowDatesPart = this.game.querySelector('.game-timeline__arrow__dates-part')
+        this.answerZones = this.game.querySelector('.game-timeline__arrow__answer-zones')
+        this.answerList = this.game.querySelector('.game-timeline__answers-list')
         this.loadLevel()
     }
 
     loadLevel() {
 
         let halfCircles = []
+        let dates = []
+        let answerZone = []
+        let answers = [
+            []
+        ]
 
         for (let i = 0; i < this.levels[this.levelToCharge-1].length; i++) {
-            //console.log(this.halfCirclePart)        
+
             halfCircles[i] = document.createElement('div')
             halfCircles[i].classList.add('game-timeline__arrow__half-circles-part__circle')
             this.halfCirclePart.appendChild(halfCircles[i])
-        }
-
-        let dates = []
-
-        for (let i = 0; i < this.levels[this.levelToCharge-1].length; i++) {
-            //console.log(this.halfCirclePart)        
+        
             dates[i] = document.createElement('div')
             dates[i].classList.add('game-timeline__arrow__dates-part__date')
             dates[i].innerText = this.levels[this.levelToCharge-1][i][0]
             this.arrowDatesPart.appendChild(dates[i])
+
+            answerZone[i] = document.createElement('div')
+            answerZone[i].classList.add('game-timeline__arrow__answer-zones__answers')
+            this.answerZones.appendChild(answerZone[i])
+        }
+        
+        let i = 0
+
+        while(answers.length <= this.levels[this.levelToCharge-1].length) {
+
+            const selectedNumber = Math.floor(Math.random() * this.levels[this.levelToCharge-1].length+1)
+            const selectedAnswer = this.levels[this.levelToCharge-1][selectedNumber-1][1]
+
+            console.log(selectedAnswer)
+
+            answers[i][0] = selectedAnswer
+            //for(let n = 0; n < answers.length; n++) { }
+
+            i++
         }
     }
 }
