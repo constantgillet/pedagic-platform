@@ -90,6 +90,7 @@
     box-sizing: border-box;
     font-size: 1em;
     text-align: center;
+    animation: inputbis 3s cubic-bezier(0.71, 0.32, 0.61, 1.13);
 }
 
 @media screen and (max-width: 450px) {
@@ -169,3 +170,17 @@
         top: 63vh;
     }
 }
+@keyframes inputbis {
+    0% {
+         transform:scale(1);
+         
+ }
+     50%{
+         transform:scale(0.9);
+         
+     }
+     100%{
+        transform:scale(1);
+
+     }
+ }

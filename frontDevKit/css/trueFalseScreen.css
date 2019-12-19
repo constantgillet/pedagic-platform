@@ -80,14 +80,11 @@
   background: #F9EEC5;
   border-radius: 6px;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-  cursor: pointer;
-  animation: button 3s cubic-bezier(0.71, 0.32, 0.61, 1.13) infinite; }
-
-.is-active {
-  animation: slide 3s cubic-bezier(0.71, 0.32, 0.61, 1.13); }
+  cursor: pointer; }
 
 .next__game__button:active {
-  border: 2px solid #4CAEE1; }
+  border: 2px solid #4CAEE1;
+  animation: button 3s cubic-bezier(0.71, 0.32, 0.26, 1.29); }
 
 @media screen and (max-width: 450px) {
   .true__false__zone {
@@ -178,10 +175,5 @@
     transform: scale(0.9); }
   100% {
     transform: scale(1); } }
-@keyframes slide {
-  0% {
-    transform: translateX(200px); }
-  100% {
-    transform: translateX(2600px); } }
 
 /*# sourceMappingURL=trueFalseScreen.css.map */
