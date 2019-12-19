@@ -1,6 +1,5 @@
-h2 {
-  width: 90vw; }
-
+.game__zone__title {
+  margin-top: 25px; }
 .game__zone__propositions {
   position: absolute;
   left: 10vw;
@@ -11,7 +10,6 @@ h2 {
   flex-direction: column;
   width: 80vw;
   height: 60vh; }
-
 .game__zone__proposition {
   display: flex;
   justify-content: space-between;
@@ -20,12 +18,12 @@ h2 {
   height: 40px;
   left: 10vw;
   top: 20vh;
-  margin: 30px 0;
+  margin: 15px 0;
   padding: 0 20px;
   background: #F9EEC5;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
   border: 2px solid #F9EEC5;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box; }
   .game__zone__proposition__line {
     width: 20px;
@@ -34,16 +32,12 @@ h2 {
     background: #4C4C4C; }
 
 @media screen and (max-width: 450px) {
-  .game__zone__title {
-    top: 15vh; }
-    .game__zone__title h2 {
-      font-size: 1em; }
-    .game__zone__title h4 {
-      font-size: 0.8em; }
   .game__zone__propositions {
+    position: absolute;
     top: 20vh;
     width: 80vw;
-    height: 60vh; }
+    height: 60vh;
+    left: 5vw; }
   .game__zone__proposition {
     width: 80%;
     height: 8%;

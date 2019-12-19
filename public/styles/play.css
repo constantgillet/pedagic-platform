@@ -14,7 +14,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh; }
+  height: 90vh;
+  width: 100vw;
+  margin: 0; }
 
 .game__zone {
   width: 90vw;
@@ -44,7 +46,7 @@ main {
   .game__zone__title {
     position: absolute;
     left: 0;
-    top: 14vh;
+    top: 16vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,8 +122,21 @@ main {
     width: 100vw; }
 
   .game__zone {
+    position: absolute;
     width: 90vw;
-    height: 87vh; }
+    height: 87vh;
+    left: 5vw;
+    display: flex;
+    justify-content: center; }
+    .game__zone__title {
+      width: 90vw;
+      top: 10vh; }
+      .game__zone__title h2 {
+        font-size: 1.2em;
+        margin: 5px 0 2px 0; }
+      .game__zone__title h4 {
+        font-size: 0.9em;
+        margin: 2px 0; }
     .game__zone__level__bar {
       width: 80%;
       height: 6px;
@@ -132,22 +147,11 @@ main {
         height: 6px;
         left: 0;
         top: 0; }
-    .game__zone__title {
-      left: 0;
-      top: 9vh;
-      width: 100vw;
-      height: 10%; }
-      .game__zone__title h2 {
-        font-size: 1.2em;
-        margin: 5px 0 2px 0; }
-      .game__zone__title h4 {
-        font-size: 0.9em;
-        margin: 2px 0; }
     .game__zone__timer {
       width: 50px;
       height: 50px;
       left: calc( 50% - 50px / 2);
-      bottom: 14vh;
+      bottom: 4vh;
       border: 3px solid #b5b7b9;
       border-radius: 50%;
       font-size: 1em; }

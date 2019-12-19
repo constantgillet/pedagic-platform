@@ -1,57 +1,53 @@
 .game__zone__answer {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 44vw;
+  width: 60vw;
   height: 40vh;
-  top: 33%;
-  left: 28%; }
-  .game__zone__answer h1 {
-    margin-top: 22%;
-    font-size: 1.2rem; }
-  .game__zone__answer__answer1 {
-    width: 15vw;
-    height: 15vh;
+  top: 30vh;
+  left: 20vw; }
+  .game__zone__answer .answer {
+    width: 20vw;
+    height: 10vh;
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #F9EEC5;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 1.2em;
     cursor: pointer; }
-  .game__zone__answer__answer1:active {
-    background: #4CAEE1; }
-  .game__zone__answer__answer2:active {
-    background: #4CAEE1; }
-  .game__zone__answer__answer3:active {
-    background: #4CAEE1; }
-  .game__zone__answer__answer4:active {
-    background: #4CAEE1; }
-  @media screen and (min-width: 200px) and (max-width: 1024px) {
-    .game__zone__answer h1 {
-      font-size: 0.8rem;
-      margin-top: 56%;
-      width: 100%; }
-    .game__zone__answer__title h2 {
-      font-size: 0.7em; } }
-  .game__zone__answer__answer2 {
-    width: 15vw;
-    height: 15vh;
+  .game__zone__answer .answer:active {
+    border: 2px solid #4CAEE1; }
+
+@media screen and (max-width: 450px) {
+  .game__zone__answer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 50vh;
+    top: 20vh; }
+  .game__zone .answer {
+    width: 60vw;
+    height: 6vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #F9EEC5;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-    border-radius: 4px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 1em;
     cursor: pointer; }
-  .game__zone__answer__answer3 {
-    width: 15vw;
-    height: 15vh;
-    background: #F9EEC5;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-    border-radius: 4px;
-    cursor: pointer; }
-  .game__zone__answer__answer4 {
-    width: 15vw;
-    height: 15vh;
-    background: #F9EEC5;
-    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
-    border-radius: 4px;
-    cursor: pointer; }
+  .game__zone .answer:active {
+    border: 2px solid #4CAEE1; } }
 
 /*# sourceMappingURL=qcm.css.map */

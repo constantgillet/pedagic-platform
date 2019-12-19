@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <title>Plateforme pédagique | Play | QCM</title>
+    <title>Plateforme pédagique | Play</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../public/styles/qcm.css">
     <link rel="stylesheet" href="../../public/styles/play.css">
+    <link rel="stylesheet" href="../../public/styles/multipleQuestion.css">
 </head>
-
 <body>
     <main>
         <section class="game__zone">
@@ -18,28 +16,27 @@
                 <div class="game__zone__level__bar__active"></div>
             </div>
             <div class="game__zone__title">
-                <h2>La séance d'ouverture des Etats Généraux a lieu à Versailles le ... ?</h2>
+                <h2>Que fait la constitution ?</h2>
+                <h4>Sélectionnez les bonnes réponses !</h4>
             </div>
-            <div class="game__zone__answer">
-                <div class="game__zone__answer__answer1 answer">
-                    1er mai 1789
+            <div class="game__zone__multiple__response">
+                <div class="game__zone__response__1 response">
+                    Elle partage le pouvoir entre le roi et une assemblée élue par le suffrage censitaire
                 </div>
-                <div class="game__zone__answer__answer2 answer">
-                    5 mai 1789
+                <div class="game__zone__response__2 response">
+                    Elle donne le pouvoir absolu au Roi.
                 </div>
-                <div class="game__zone__answer__answer3 answer">
-                    8 mai 1789 
+                <div class="game__zone__response__3 response">
+                    Elle permet aux sujets du Royaume de voter au suffrage universel
                 </div>
-                <div class="game__zone__answer__answer4 answer">
-                    17 décembre 2019
+                <div class="game__zone__response__4 response">
+                    Elle vend les biens du clergé pour résoudre les problèmes financiers
                 </div>
-
-            </div>
             </div>
             <div class="game__zone__timer">
-                <div class="game__zone__timer__number">8</div>
+                <div class="game__zone__timer__number">10</div>
                 <div class="game__zone__timer__sec">sec</div>
-            </div>
+            </div>  
         </section>
     </main>
     <nav class="footer__nav">
@@ -55,6 +52,6 @@
             </li>
         </ul>
     </nav>
+    <script id="game" src="../../public/scripts/timeline.js" level="1" ></script>
 </body>
-
 </html>

@@ -16,6 +16,8 @@ main {
     justify-content: center;
     align-items: center;
     height: 90vh;
+    width: 100vw;
+    margin: 0;
 }
 
 .game__zone {
@@ -52,7 +54,7 @@ main {
     &__title{
         position: absolute;
         left: 0;
-        top: 14vh;
+        top: 16vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -151,8 +153,28 @@ main {
     }
     
     .game__zone {
+
+        &__title {
+            width: 90vw;
+            top: 10vh;
+            
+            h2 {
+                font-size: 1.2em;
+                margin: 5px 0 2px 0;
+            }
+    
+            h4 {
+                font-size: 0.9em;
+                margin: 2px 0;
+            }
+        }
+
+        position: absolute;
         width: 90vw;
         height: 87vh;
+        left: 5vw;
+        display: flex;
+        justify-content: center;
     
         &__level__bar {
             width: 80%;
@@ -168,30 +190,12 @@ main {
                 top: 0;
             }
         }
-    
-    
-        &__title{
-            left: 0;
-            top: 9vh;
-            width: 100vw;
-            height: 10%;
-    
-            h2 {
-                font-size: 1.2em;
-                margin: 5px 0 2px 0;
-            }
-    
-            h4 {
-                font-size: 0.9em;
-                margin: 2px 0;
-            }
-        }
 
         &__timer {
             width: 50px;
             height: 50px;
             left: calc( 50% - 50px / 2);
-            bottom: 14vh;
+            bottom: 4vh;
             border: 3px solid rgb(181, 183, 185);
             border-radius: 50%;
             font-size: 1em;
