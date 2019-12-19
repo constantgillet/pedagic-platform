@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-const answers =   
-=======
 const script = document.getElementById('game')
 const levelAsked = script.getAttribute('level')
 
@@ -84,4 +81,3 @@ class qcmGame {
 }
 
 const qcm = new qcmGame(document.querySelector('.game__zone'), levelQuestions, levelAsked)
->>>>>>> 0c92edc42941180f0d65ab754038d71bd58cf88d
