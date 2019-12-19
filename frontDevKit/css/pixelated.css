@@ -39,7 +39,7 @@
     box-sizing: border-box;
     font-size: 1em;
     text-align: center;
-    animation: input 3s cubic-bezier(0.71, 0.32, 0.26, 1.29); }
+    animation: input 2s 30ms infinite; }
 
 @media screen and (max-width: 450px) {
   .game__zone__blur {
@@ -61,11 +61,9 @@
       margin: 0;
       font-size: 0.9em; } }
 @keyframes input {
-  0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.9); }
-  100% {
-    transform: scale(1); } }
+  to {
+    transform: translateX(0px); }
+  from {
+    transform: translateX(200px); } }
 
 /*# sourceMappingURL=pixelated.css.map */
