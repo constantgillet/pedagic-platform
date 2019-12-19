@@ -13,12 +13,12 @@ class pixelatedGame {
         this.game = game
         this.levels = levels
         this.levelToCharge = levelToCharge
-        this.title = game.querySelector('.game__zone__title__main-title')
-        this.image = game.querySelector('.game__zone__blur__img')
-        this.imageBlur = game.querySelector('.game__zone__blur__img__blur')
-        this.form = game.querySelector('.game__zone__blur__form')
-        this.input = game.querySelector('.game__zone__blur__response')
-        this.timerText = game.querySelector('.game__zone__timer__number')
+        this.title = this.game.querySelector('.game__zone__title__main-title')
+        this.image = this.game.querySelector('.game__zone__blur__img')
+        this.imageBlur = this.game.querySelector('.game__zone__blur__img__blur')
+        this.form = this.game.querySelector('.game__zone__blur__form')
+        this.input = this.game.querySelector('.game__zone__blur__response')
+        this.timerText = this.game.querySelector('.game__zone__timer__number')
         this.timeInterval = null
         this.loadLevel()
         this.timeOut()

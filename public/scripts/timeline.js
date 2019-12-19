@@ -23,6 +23,7 @@ const levelQuestions = [
 ]
 
 class timeLineGame {
+    
     constructor(game, levels, levelToCharge) {
         this.game = game
         this.levels = levels
