@@ -27,7 +27,11 @@ class punchedTextGame {
         this.textZone = this.game.querySelector('.game__zone__punchedText__text')
         this.reponsesZone = this.game.querySelector('.game__zone__punchedText__responses')
         this.coveredtext = null
+        this.timerText = this.game.querySelector('.game__zone__timer__number')
+        this.timeInterval = null
         this.loadLevel()
+        this.timeOut()
+        
     }
 
     loadLevel() {
@@ -54,12 +58,32 @@ class punchedTextGame {
                 if(i == this.levels[this.levelToLoad-1][3]) {
                     alert('Vous avez gagné')
                     this.coveredtext.style.color = '#4D4D4D'
+                    clearInterval(this.timeInterval)
                 }
                 else {
                     alert('Perdu')
                 }
             })
         }
+    }
+
+    timeOut() {
+        let seconds = 10
+
+            this.timeInterval = setInterval(() => {
+
+                seconds --
+
+                //We change the text of the seconds
+                this.timerText.innerText = seconds
+
+                if(seconds == 0)
+                {
+                    alert('Fin du game mon gars')
+                    clearInterval(this.timeInterval)
+                }
+        }, 1000);
+
     }
 }
 
