@@ -110,6 +110,7 @@
                 align-items: center;
                 border-radius: 4px;
                 color: #4C4C4C;
+                cursor: pointer;
 
                 &--selected {
                     height: 10vh;
@@ -251,7 +252,7 @@
     
                     &--selected {
                         height: 10vh;
-                        width: 13%;
+                        width: 25vw;
                         display: flex;
                         justify-content: center;
                         align-items: center;
