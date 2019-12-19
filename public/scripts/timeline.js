@@ -4,12 +4,12 @@ const levelAsked = script.getAttribute('level')
 const levelQuestions = [
     //question 1
     [
-        ['Mai 1789', 'Réunion États Généraux'],
-        ['20 juin 1789', 'Serment du jeu de paume'],
-        ['14 juillet 1789', 'Prise de la Bastille'],
-        ['4 août 1789', 'Abolition des privilèges'],
-        ['26 août 1789', 'Adoption de DDHC'],
-        ['3 septembre 1791', 'Première constitution en France']
+        ['Mai 1789', 'Réunion États Généraux', 5],
+        ['20 juin 1789', 'Serment du jeu de paume', 2],
+        ['14 juillet 1789', 'Prise de la Bastille', 4],
+        ['4 août 1789', 'Abolition des privilèges', 3],
+        ['26 août 1789', 'Adoption de DDHC', 0],
+        ['3 septembre 1791', 'Première constitution en France', 1]
     ],
     //question 2
     [
@@ -32,6 +32,9 @@ class timeLineGame {
         this.arrowDatesPart = this.game.querySelector('.game-timeline__arrow__dates-part')
         this.answerZones = this.game.querySelector('.game-timeline__arrow__answer-zones')
         this.answerList = this.game.querySelector('.game-timeline__answers-list')
+        this.selecting = false
+        this.selected
+
         this.loadLevel()
     }
 
@@ -40,9 +43,8 @@ class timeLineGame {
         let halfCircles = []
         let dates = []
         let answerZone = []
-        let answers = [
-            []
-        ]
+        let answers = []
+        let responses = []
 
         for (let i = 0; i < this.levels[this.levelToCharge-1].length; i++) {
 
@@ -58,21 +60,53 @@ class timeLineGame {
             answerZone[i] = document.createElement('div')
             answerZone[i].classList.add('game-timeline__arrow__answer-zones__answers')
             this.answerZones.appendChild(answerZone[i])
+
+            answers[i] = document.createElement('div')
+            answers[i].classList.add('game-timeline__answers-list__answer')
+            this.answerList.appendChild(answers[i])
+
+            answers[i].addEventListener('click', () => {
+                console.log(answers[i].innerText)
+
+                
+                if(this.selecting) {
+
+                    for (let n = 0; n < answers.length; n++) {
+                       
+                        answers[n].classList.remove('game-timeline__answers-list__answer--selected')
+                        answers[n].classList.add('game-timeline__answers-list__answer')
+                    }
+
+                }
+                answers[i].classList.remove('game-timeline__answers-list__answer')
+                answers[i].classList.add('game-timeline__answers-list__answer--selected')
+                this.selected = i
+                this.selecting = true
+            })
+
+            answerZone[i].addEventListener('click', () => {
+
+                if (this.selecting == true) {
+                    console.log(this.selected)
+                    
+                    for (let n = 0; n < this.levels[this.levelToCharge-1].length; n++) {
+                        const element = array[n];
+                        
+                    }
+                }
+            })
         }
         
-        let i = 0
+        for (let i = 0; i < this.levels[this.levelToCharge-1].length; i++) {
 
-        while(answers.length <= this.levels[this.levelToCharge-1].length) {
+            for (let n = 0; n < this.levels[this.levelToCharge-1].length; n++) {
 
-            const selectedNumber = Math.floor(Math.random() * this.levels[this.levelToCharge-1].length+1)
-            const selectedAnswer = this.levels[this.levelToCharge-1][selectedNumber-1][1]
+                if(i == this.levels[this.levelToCharge-1][n][2]) {
 
-            console.log(selectedAnswer)
-
-            answers[i][0] = selectedAnswer
-            //for(let n = 0; n < answers.length; n++) { }
-
-            i++
+                    answers[i].innerText = this.levels[this.levelToCharge-1][n][1]
+                    break
+                }
+            }
         }
     }
 }
