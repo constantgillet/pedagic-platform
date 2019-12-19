@@ -90,8 +90,8 @@ class timeLineGame {
                     console.log(this.selected)
                     
                     for (let n = 0; n < this.levels[this.levelToCharge-1].length; n++) {
-                        const element = array[n];
-                        
+                      
+                        if (this.levels[this.levelToCharge-1][])
                     }
                 }
             })
