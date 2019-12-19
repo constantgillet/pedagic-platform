@@ -12,20 +12,23 @@
 <body>
     <main>
         <section class="game__zone">
-            <div class="game__zone__time__bar">
-                <div class="game__zone__time__bar__active"></div>
+            <div class="game__zone__level__bar">
+                <div class="game__zone__level__bar__active"></div>
             </div>
             <div class="game__zone__title">
-                <h2>Quel est le nom de ce tableau ?</h2>
+                <h2 class="game__zone__title__main-title">Quel est le nom de ce tableau ?</h2>
                 <h4>Toutes les 2 secondes, l'image devient plus nette !</h4>
             </div>
             <div class="game__zone__blur">
                 <div class="game__zone__blur__img">
                     <div class="game__zone__blur__img__blur"></div>
                 </div>
-                <form><input class="game__zone__blur__response" type="text" name="response" placeholder="Entre ta réponse ici..."></form>            </div>
+                <form action="" method="POST" class="game__zone__blur__form">
+                    <input class="game__zone__blur__response" type="text" name="response" placeholder="Entre ta réponse ici...">
+                </form>
+            </div>
             <div class="game__zone__timer">
-                <div class="game__zone__timer__number">8</div>
+                <div class="game__zone__timer__number">15</div>
                 <div class="game__zone__timer__sec">sec</div>
             </div>      
         </section>
@@ -43,5 +46,6 @@
             </li>
         </ul>
     </nav>
+    <script id="game" src="../../public/scripts/pixelated.js" level="1" ></script>
 </body>
 </html>

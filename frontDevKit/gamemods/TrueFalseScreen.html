@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Plateforme pédagique | Play | Pixelated</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/styles/trueFalseScreen.css">
+    <link rel="stylesheet" href="../../public/styles/play.css">
+</head>
+<body>
+    <main>
+        <section class="student__false__zone game__zone">
+            <div class="true__false__zone">
+                <div class="student__zone">
+                    <div class="student__zone__title">
+                        Faux
+                    </div>
+                    <div class="student__zone__explain">
+                        Napoléon Ier, né le 15 août 1769 à Ajaccio et mort le 5 mai 1821 sur l'île Sainte-Hélène, est le premier empereur des Français.
+                    </div>
+                </div>
+                <div class="true__zone">
+                    <div class="true__zone__title">
+                        La bonne réponse était <div class="good__element good__element__inside">Louis XVI</div>
+                    </div>
+                    <div class="true__zone__explain">
+                        Louis XVI , né le 23 août 1754 à Versailles et mort guillotiné le 21 janvier 1793 à Paris, est le dernier roi de France de la période dite de l'Ancien Régime. Il est roi de France de 1774 à 1792.
+                    </div>
+                </div>
+            </div>
+            <div class="response__zone">
+                <div class="response__zone__div good__element">Louis XVI</div>
+                <div class="response__zone__div">Louis XIV</div>
+                <div class="response__zone__div">Henri IV</div>
+                <div class="response__zone__div chosen__element">Napoléon I</div>
+            </div>
+            <div class="next__game__button">Suivant</div>
+        </section>
+    </main>
+    <nav class="footer__nav">
+        <ul class="footer__nav__items">
+            <li class="footer__nav__home">
+                <object type="image/svg+xml" data="../images/home.svg" width="50px" height="50px"></object>
+            </li>
+            <li class="footer__nav__mission">
+                <object type="image/svg+xml" data="../images/mission.svg" width="50px" height="50px"></object>
+            </li>
+            <li class="footer__nav__profil">
+                <object type="image/svg+xml" data="../images/profil.svg" width="50px" height="50px"></object>
+            </li>
+        </ul>
+    </nav>
+    <script id="game" src="../../public/scripts/punchedText.js" level="1" ></script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.proposition__key__word {
+    position: absolute;
+    width: 70vw;
+    height: 20vh;
+    top: 35vh;
+    left: 15vw;
+
+    .proposition {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.1em;
+        background: #F9EEC5;
+        box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+        border: 2px solid #F9EEC5;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        &__inside__border {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #4CAEE1;
+            border-radius: 50%;
+        }
+    }
+
+    &__1 {
+        position: absolute;
+        width: 30vw;
+        height: 8vh;
+        top: 0;
+        left: 0;
+    }
+
+    &__2 {
+        position: absolute;
+        width: 18vw;
+        height: 10vh;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__3 {
+        position: absolute;
+        width: 10vw;
+        height: 10vh;
+        bottom: 0;
+        left: 20vw;
+    }
+
+    &__4 {
+        position: absolute;
+        width: 20vw;
+        height: 20vh;
+        top: 0;
+        right: 18vw;
+    }
+
+    &__5 {
+        position: absolute;
+        width: 16vw;
+        height: 9vh;
+        top: 0;
+        right: 0;
+    }
+
+    &__6 {
+        position: absolute;
+        width: 16vw;
+        height: 9vh;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.game__zone__response__enter {
+    position: absolute;
+    width: 20vw;
+    height: 3vh;
+    left: 40vw;
+    top: 63vh;
+    margin-bottom: 10px;
+    background: #F9EEC5;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+    border: 2px solid #F9EEC5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+    .proposition__key__word {
+        position: absolute;
+        width: 74vw;
+        height: 32vh;
+        top: 25vh;
+        left: 8vw;
+    
+        .proposition {
+            font-size: 0.8em;
+
+    
+            &__inside__border {
+                width: 40px;
+                height: 40px;
+                border: 2px solid #4CAEE1;
+                border-radius: 50%;
+            }
+        }
+    
+        &__1 {
+            position: absolute;
+            width: 30vw;
+            height: 8vh;
+            top: 0;
+            left: 0;
+        }
+    
+        &__2 {
+            position: absolute;
+            width: 30vw;
+            height: 10vh;
+            top: 10vh;
+            left: 0;
+        }
+    
+        &__3 {
+            position: absolute;
+            width: 30vw;
+            height: 11vh;
+            top: 21vh;
+            left: 0;
+        }
+    
+        &__4 {
+            position: absolute;
+            width: 40vw;
+            height: 20vh;
+            top: 0;
+            right: 0;
+        }
+    
+        &__5 {
+            position: absolute;
+            width: 19vw;
+            height: 11vh;
+            top: 21vh;
+            right: 21vw;
+        }
+    
+        &__6 {
+            position: absolute;
+            width: 19vw;
+            height: 11vh;
+            bottom: 0;
+            right: 0;
+        }
+    }
+    
+    .game__zone__response__enter {
+        position: absolute;
+        width: 60vw;
+        height: 3vh;
+        left: 15vw;
+        top: 63vh;
+    }
+}
