@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Plateforme pédagogique | Play</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../public/styles/play.css">
+    <link rel="stylesheet" href="../../public/styles/endGameScreen.css">
+</head>
+<body>
+    <main>
+        <section class="game__zone">
+            <div class="game__zone__level__bar">
+                <div class="game__zone__level__bar__active"></div>
+            </div>
+            <div class="game__zone__title">
+                <h2>Mission terminée !</h2>
+                <h3>Bien joué à toi !</h3>
+            </div>
+            <div class="score__container">
+                <div class="score__container__score">
+                    Score
+                    <div class="score__container__score__zone__1">S</div>
+                </div>
+                <div class="score__container__good-answer">
+                    Bonnes réponses
+                    <div class="score__container__score__zone__2">S</div>
+                </div>
+                <div class="score__container__speed">
+                    Bonus de vitesse
+                    <div class="score__container__score__zone__3">S</div>
+                </div>
+                <div class="general__score">S</div>
+                <div class="earned__experience">+200xp</div>
+            </div> 
+            <div class="experience__bar">
+                <div class="experience__bar__active"></div>
+            </div>
+        </section>
+    </main>
+    <nav class="footer__nav">
+        <ul class="footer__nav__items">
+            <li class="footer__nav__home">
+                <object type="image/svg+xml" data="../images/home.svg" width="50px" height="50px"></object>
+            </li>
+            <li class="footer__nav__mission">
+                <object type="image/svg+xml" data="../images/mission.svg" width="50px" height="50px"></object>
+            </li>
+            <li class="footer__nav__profil">
+                <object type="image/svg+xml" data="../images/profil.svg" width="50px" height="50px"></object>
+            </li>
+        </ul>
+    </nav>
+    <script id="game" src="../../public/scripts/endGameScreen.js" level="1" ></script>
+</body>
+</html>
