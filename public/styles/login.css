@@ -17,7 +17,7 @@ main {
 .login-section {
   position: absolute;
   background: #FDFDFD;
-  width: 60vh;
+  width: 38vw;
   height: 90vh;
   border-radius: 6px;
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
@@ -53,7 +53,7 @@ main {
       margin-bottom: 2%; }
     .login-section .login-form__first-part [type=text], .login-section .login-form__first-part [type=email], .login-section .login-form__first-part [type=password] {
       height: 4.2vh;
-      width: 40vh;
+      width: 20vw;
       border: solid black 1px;
       border-radius: 8px;
       font-size: 1.2em;
@@ -62,8 +62,8 @@ main {
   .login-section .login-form [type=image] {
     position: absolute;
     height: 3vh;
-    width: 3vh;
-    left: 88%;
+    width: 2vw;
+    left: 85%;
     top: 87%; }
   .login-section .login-form__second-part {
     position: absolute;
@@ -87,11 +87,17 @@ main {
     font-size: 1.2em;
     position: absolute;
     top: 75%;
-    left: 44%; }
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .login-section .login-form .login-section {
-      width: 88vw; }
-    .login-section .login-form a {
-      left: 43.5%; } }
+    left: 45%; }
+
+@media screen and (max-width: 450px) {
+  .login-section {
+    width: 88vw; }
+
+  a {
+    left: 42.5%;
+    top: 76%; }
+
+  .submit {
+    width: 13vw; } }
 
 /*# sourceMappingURL=login.css.map */

@@ -4,6 +4,21 @@
     height: 40vh;
     left: 20vw;
     top: 30vh;
+   
+
+.game__zone__punchedText{
+
+ animation: input 2s linear alternate infinite;
+
+    }
+@keyframes input{
+   to {
+        scale:0;
+}
+    from{
+        scale:1.1;
+    }
+}
 
 
     &__text {

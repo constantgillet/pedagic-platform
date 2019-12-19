@@ -57,14 +57,14 @@ main {
             border-radius: 8px;
             margin-left: -53%;
 
-            .teacher{
-                width: 70vh;
-                position: absolute;
-                margin-right: 10px;
-                top: 47.3%;
-    
-                }
+        .teacher{
+            width: 70vh;
+            position: absolute;
+            margin-right: 10px;
+            top: 47.3%;
+
         }
+    }
 
         &__userType__student{
             width: 23vh;
@@ -121,10 +121,22 @@ main {
 
         &__login-link {
             color: #424242;
-            margin-top: 1.7vh;
-            margin-bottom: 1.7vh;
+            margin-top: 2%;
+            margin-bottom: 2%;
             font-size: 1.2em;
         
         }
+    }
+}
+@media screen and (max-width: 450px) {
+    .login-section{
+       width:88vw;
+    }
+    a{
+       left: 42.5%;
+       top: 76%;
+    }
+    .submit{
+        width: 13vw;
     }
 }
