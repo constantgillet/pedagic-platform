@@ -82,7 +82,7 @@ class punchedTextGame {
                     alert('Fin du game mon gars')
                     clearInterval(this.timeInterval)
                 }
-        }, 1000);
+        }, 1000)
 
     }
 }
