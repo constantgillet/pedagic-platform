@@ -44,7 +44,11 @@
 
 @media screen and (max-width: 450px) {
     .game__zone__punchedText {
+        position: absolute;
         top: 25vh;
+        width: 70vw;
+        height: 60vh;
+        left: 10vw;
     
     
         &__text {

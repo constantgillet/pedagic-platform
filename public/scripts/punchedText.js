@@ -88,3 +88,4 @@ class punchedTextGame {
 }
 
 const punchedText = new punchedTextGame(document.querySelector('.game__zone'), levelQuestions, levelAsked)
+
