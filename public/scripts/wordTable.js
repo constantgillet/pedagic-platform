@@ -68,7 +68,7 @@ class wordTableGame {
     }
 
     timeOut() {
-        let seconds = 60
+        let seconds = 25
 
         this.timeInterval = setInterval(() => {
 

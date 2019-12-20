@@ -117,7 +117,7 @@ class timeLineGame {
     }
 
     timeOut() {
-        let seconds = 40
+        let seconds = 15
 
             this.timeInterval = setInterval(() => {
 
