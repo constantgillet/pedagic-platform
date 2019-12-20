@@ -62,7 +62,7 @@ main {
   .login-section .login-form [type=image] {
     position: absolute;
     height: 3vh;
-    width: 2vw;
+    width: 3vh;
     left: 85%;
     top: 87%; }
   .login-section .login-form__second-part {
@@ -91,16 +91,20 @@ main {
 
 @media screen and (max-width: 450px) {
   .login-section {
-    width: 88vw; }
+    width: 94vw; }
 
   a {
-    left: 42.5%;
-    top: 76%; }
+    left: 37.5%;
+    top: 79%; }
 
   .submit {
     width: 13vw; }
 
   [type=email], [type=password] {
-    width: 42vh; } }
+    width: 42vh; }
+
+  [type=image] {
+    height: 4vh;
+    width: 10vw; } }
 
 /*# sourceMappingURL=login.css.map */
