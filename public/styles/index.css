@@ -10,14 +10,19 @@ body {
   color: #4D4D4D; }
 
 main {
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90vh; }
+  justify-content: center;
+  align-items: center; }
 
 .card {
   width: 22vw;
-  height: 70vh;
+  height: 60vh;
+  margin-left: 10vw;
   padding: 0 25px 25px 25px;
   border-radius: 6px;
   background: #f8f8f8;
@@ -103,62 +108,23 @@ main {
 
 .character {
   position: relative; }
-  .character .experience {
+  .character .avatar {
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    left: calc( 50% - 50px / 2);
-    top: 80%;
-    border: 3px solid #4CAEE1;
-    border-radius: 50%;
-    box-sizing: border-box;
-    font-size: 1.8em; }
-    .character .experience__progress {
-      position: absolute;
-      left: calc( 50% - 200px / 2);
-      top: 90%;
-      width: 200px;
-      height: 30px;
-      text-align: center;
-      font-size: 1.1em; }
-    .character .experience__bar {
-      position: absolute;
-      width: 240px;
-      height: 6px;
-      left: calc( 50% - 240px / 2);
-      top: 95%;
-      background: #D7DDE0;
-      border-radius: 2px; }
-      .character .experience__bar__progress {
-        position: absolute;
-        width: 20%;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: #4CAEE1;
-        border-radius: 18px; }
-
-.success__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px; }
-  .success__container__icon {
-    padding: 30px 15px 20px 15px; }
+    top: 10vh;
+    left: 2.5vw;
+    width: 20vw;
+    height: 45vh; }
 
 .footer__nav {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
-  bottom: 0;
+  top: 80vh;
   left: 0;
-  background: #FFFFFF; }
+  background: #FFFFFF;
+  overflow: hidden; }
   .footer__nav__items {
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;

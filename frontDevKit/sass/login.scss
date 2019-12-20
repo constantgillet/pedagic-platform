@@ -105,12 +105,16 @@ body {
         a {
             top: 55vh;
             left: 30.5vw;
-            width: 80vw;
+            width: 20vw;
             height: 20px;
             position: absolute;
             color: #5b5b5b;
             font-size: 1.3rem;
         }    
+    }
+
+    .subscribe-link {
+        width: 200px;
     }
 }
 

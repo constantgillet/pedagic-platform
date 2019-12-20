@@ -62,4 +62,69 @@ main {
       color: white;
       border: none; }
 
+@media screen and (max-width: 450px) {
+  main {
+    height: 100vh;
+    width: 100vw;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .chooseAvatar {
+    position: absolute;
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    height: 80vh;
+    background: #FDFDFD;
+    border-radius: 6px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .chooseAvatar__title {
+      font-size: 1.5rem;
+      font-weight: bolder;
+      margin-top: 10vh;
+      margin-bottom: 2vh; }
+    .chooseAvatar__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .chooseAvatar__form .div-labels {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column; }
+        .chooseAvatar__form .div-labels img {
+          width: 40vw;
+          height: 31vh;
+          margin-right: 10px;
+          margin-left: 10px; }
+        .chooseAvatar__form .div-labels [type=radio] {
+          position: absolute;
+          opacity: 0;
+          width: 0;
+          height: 0; }
+        .chooseAvatar__form .div-labels [type=radio] + img {
+          cursor: pointer;
+          border: 1.5px solid #C2C2C2;
+          border-radius: 8px; }
+        .chooseAvatar__form .div-labels [type=radio]:checked + img {
+          border: 1.5px solid #4d4d4d;
+          border-radius: 8px; }
+      .chooseAvatar__form__button-continue {
+        width: 196px;
+        height: 5vh;
+        font-size: 2.1vh;
+        margin-top: 13vh;
+        left: 859px;
+        top: 824px;
+        background: #60B6E3;
+        border-radius: 8px;
+        color: white;
+        border: none; } }
+
 /*# sourceMappingURL=chooseAvatar.css.map */
