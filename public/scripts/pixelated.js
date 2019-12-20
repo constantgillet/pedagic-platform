@@ -1,5 +1,6 @@
 const script = document.getElementById('game')
 const levelAsked = script.getAttribute('level')
+const question = script.getAttribute('question')
 
 const levelQuestions = [
     //question 1
@@ -38,7 +39,7 @@ class pixelatedGame {
             _event.preventDefault()
             
             if(this.input.value == this.levels[this.levelToCharge-1][3]) {
-                alert('bonne réponse')
+                this.win()
                 clearInterval(this.timeInterval)
             }
             else {
@@ -64,11 +65,38 @@ class pixelatedGame {
 
                 if(seconds == 0)
                 {
-                    alert('Fin du game mon gars')
                     clearInterval(this.timeInterval)
+                    this.win()
                 }
         }, 1000);
+    }
 
+    win() {
+        const resultForm = document.createElement('form')
+        resultForm.setAttribute('method','post')
+        resultForm.setAttribute('action','')
+
+        const inputSuccess = document.createElement('input')
+        inputSuccess.setAttribute('type','text')
+        inputSuccess.setAttribute('name','success')
+        inputSuccess.value = 'true'
+
+        const inputPoints = document.createElement('input')
+        inputPoints.setAttribute('type','text')
+        inputPoints.setAttribute('name','points')
+        inputPoints.value = '10'
+
+        const inputQuestionNumber = document.createElement('input')
+        inputQuestionNumber.setAttribute('type','text')
+        inputQuestionNumber.setAttribute('name','questionNumber')
+        inputQuestionNumber.value = question
+
+        resultForm.appendChild(inputSuccess)
+        resultForm.appendChild(inputPoints)
+        resultForm.appendChild(inputQuestionNumber)
+
+        this.game.appendChild(resultForm)
+        resultForm.submit()
     }
 }
 

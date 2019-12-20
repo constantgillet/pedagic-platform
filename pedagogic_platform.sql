@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 17 déc. 2019 à 10:40
+-- Généré le :  ven. 20 déc. 2019 à 04:52
 -- Version du serveur :  5.7.21
 -- Version de PHP :  5.6.35
 
@@ -35,15 +35,19 @@ CREATE TABLE IF NOT EXISTS `avatars` (
   PRIMARY KEY (`avatarOwnerId`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+-- --------------------------------------------------------
+
 --
--- Déchargement des données de la table `avatars`
+-- Structure de la table `game`
 --
 
-INSERT INTO `avatars` (`avatarOwnerId`, `avatarGender`) VALUES
-(28, 'male'),
-(26, 'female'),
-(25, 'female'),
-(29, 'female');
+DROP TABLE IF EXISTS `game`;
+CREATE TABLE IF NOT EXISTS `game` (
+  `gameUserId` int(11) NOT NULL,
+  `gameIndex` int(11) NOT NULL,
+  `currentGameScore` decimal(10,0) NOT NULL,
+  PRIMARY KEY (`gameUserId`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -60,18 +64,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userPassword` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `userType` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`userId`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Déchargement des données de la table `users`
---
-
-INSERT INTO `users` (`userId`, `userEmail`, `userName`, `userFirstName`, `userPassword`, `userType`) VALUES
-(29, 'constaqzdqzdnt.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(28, 'constanssqsst.gillet@hetic.net', 'GILLET', 'test', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(27, 'rider.consfesfstant@gmail.com', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(26, 'constaddznt.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher'),
-(25, 'constant.gillet@hetic.net', 'GILLET', 'Constant', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'teacher');
+) ENGINE=MyISAM AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,16 +1,17 @@
 const script = document.getElementById('game')
 const levelAsked = script.getAttribute('level')
+const question = script.getAttribute('question')
 
 const levelQuestions = [
     //question 1
     [
         1,
-        'La séance d\'ouverture des Etats Généraux a lieu à Versailles le ?',
+        'De quoi sont composés  les Etats généraux ?',
         [
-            '1er mai 1789',
-            '5 mai 1789',
-            '8 mai 1789',
-            '17 décembre 2019'
+            'Du clergé, de la noblesse et du tiers États',
+            'Des sujets du royaume de France',
+            'Des ministres de Louis XVI',
+            'Les membres les plus importants du clergé'
         ]
     ],
     //question 2
@@ -50,12 +51,12 @@ class qcmGame {
             this.answers[i].addEventListener('click', () => {
                 
                 if(i+1 == this.levels[this.levelToLoad-1][0]) {
-                    alert('Tu as trouvé la réponse')
                     clearInterval(this.timeInterval)
+                    this.win()
                 }
                 else {
-                    alert('Faux')
                     clearInterval(this.timeInterval)
+                    this.win()
                 }
             })
         }
@@ -73,10 +74,38 @@ class qcmGame {
 
                 if(seconds == 0)
                 {
-                    alert('Fin du game mon gars')
                     clearInterval(this.timeInterval)
+                    this.win()
                 }
         }, 1000)
+    }
+
+    win() {
+        const resultForm = document.createElement('form')
+        resultForm.setAttribute('method','post')
+        resultForm.setAttribute('action','')
+
+        const inputSuccess = document.createElement('input')
+        inputSuccess.setAttribute('type','text')
+        inputSuccess.setAttribute('name','success')
+        inputSuccess.value = 'true'
+
+        const inputPoints = document.createElement('input')
+        inputPoints.setAttribute('type','text')
+        inputPoints.setAttribute('name','points')
+        inputPoints.value = '10'
+
+        const inputQuestionNumber = document.createElement('input')
+        inputQuestionNumber.setAttribute('type','text')
+        inputQuestionNumber.setAttribute('name','questionNumber')
+        inputQuestionNumber.value = question
+
+        resultForm.appendChild(inputSuccess)
+        resultForm.appendChild(inputPoints)
+        resultForm.appendChild(inputQuestionNumber)
+
+        this.game.appendChild(resultForm)
+        resultForm.submit()        
     }
 }
 

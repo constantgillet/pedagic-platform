@@ -37,7 +37,7 @@ main {
     border-radius: 2px; }
     .game__zone__level__bar__active {
       position: absolute;
-      width: 10%;
+      width: 100%;
       height: 10px;
       left: 0;
       top: 0;
