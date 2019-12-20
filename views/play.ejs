@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Plateforme pédagique | Play</title>
+    <title>Histearn | Play</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -12,7 +12,32 @@
 <body>
     <main>
         <section class="game__zone">
-            <%- include('partials/punchedText') %> 
+            <% if(gameType == 'punchedText') {%>
+
+                <%- include('partials/punchedText') %>
+
+            <% } else if(gameType == 'timeline') { %>
+
+                <%- include('partials/timeline') %>
+
+            <% } else if(gameType == 'multipleQuestion') { %>
+
+                <%- include('partials/multipleQuestion') %>
+    
+            <% } else if(gameType == 'qcm') { %>
+
+                <%- include('partials/qcm') %>
+    
+            <% } else if(gameType == 'pixelated') { %>
+
+                <%- include('partials/pixelated') %>
+        
+            <% } else if(gameType == 'wordTable') { %>
+
+                    <%- include('partials/wordTable') %>
+            
+            <% } %>
+        
         </section>
     </main>
     <nav class="footer__nav">
@@ -28,6 +53,6 @@
             </li>
         </ul>
     </nav>
-    <script id="game" src="<%= gameLink %>" level="<%= levelNumber %>" ></script>
+    <script id="game" src="<%= gameLink %>" level="<%= levelNumber %>" question="<%= question %>"></script>
 </body>
 </html>

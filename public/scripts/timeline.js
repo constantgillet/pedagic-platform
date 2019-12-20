@@ -1,5 +1,6 @@
 const script = document.getElementById('game')
 const levelAsked = script.getAttribute('level')
+const question = script.getAttribute('question')
 
 const levelQuestions = [
     //question 1
@@ -13,12 +14,12 @@ const levelQuestions = [
     ],
     //question 2
     [
-        ['20 avril 1792', 'Guerre entre la France et l’autriche'],
-        ['22 septembre 1792', 'Proclamation de la république'],
-        ['21 janvier 1793', 'Exécution de Louis XVI'],
-        ['Septembre 1793 - 1794', 'Mise en place de la Terreur'],
-        ['28 juillet 1794', 'Exécution de Robespierre'],
-        ['9 novembre 1799', 'Coup d’état de Bonaparte']
+        ['20 avril 1792', 'Guerre entre la France et l’autriche', 1],
+        ['22 septembre 1792', 'Proclamation de la république', 4],
+        ['21 janvier 1793', 'Exécution de Louis XVI'], 5,
+        ['Septembre 1793 - 1794', 'Mise en place de la Terreur', 2],
+        ['28 juillet 1794', 'Exécution de Robespierre', 3],
+        ['9 novembre 1799', 'Coup d’état de Bonaparte', 6]
     ]
 ]
 
@@ -34,7 +35,9 @@ class timeLineGame {
         this.answerList = this.game.querySelector('.game-timeline__answers-list')
         this.selecting = false
         this.selected
-
+        this.timerText = document.querySelector('.game__zone__timer')
+        this.timeInterval = null
+        this.timeOut()
         this.loadLevel()
     }
 
@@ -91,7 +94,10 @@ class timeLineGame {
                     
                     for (let n = 0; n < this.levels[this.levelToCharge-1].length; n++) {
                       
-                        if (this.levels[this.levelToCharge-1][])
+                        if (this.levels[this.levelToCharge-1][n][2] == this.selected)
+                        {
+                            //alert('okey')
+                        }
                     }
                 }
             })
@@ -108,6 +114,52 @@ class timeLineGame {
                 }
             }
         }
+    }
+
+    timeOut() {
+        let seconds = 15
+
+            this.timeInterval = setInterval(() => {
+
+                seconds --
+
+                //We change the text of the seconds
+                this.timerText.innerText = seconds
+
+                if(seconds == 0)
+                {
+                    this.win()
+                    clearInterval(this.timeInterval)
+                }
+            }, 1000)
+    }
+
+    win() {
+        const resultForm = document.createElement('form')
+        resultForm.setAttribute('method','post')
+        resultForm.setAttribute('action','')
+
+        const inputSuccess = document.createElement('input')
+        inputSuccess.setAttribute('type','text')
+        inputSuccess.setAttribute('name','success')
+        inputSuccess.value = 'true'
+
+        const inputPoints = document.createElement('input')
+        inputPoints.setAttribute('type','text')
+        inputPoints.setAttribute('name','points')
+        inputPoints.value = '10'
+
+        const inputQuestionNumber = document.createElement('input')
+        inputQuestionNumber.setAttribute('type','text')
+        inputQuestionNumber.setAttribute('name','questionNumber')
+        inputQuestionNumber.value = question
+
+        resultForm.appendChild(inputSuccess)
+        resultForm.appendChild(inputPoints)
+        resultForm.appendChild(inputQuestionNumber)
+
+        this.game.appendChild(resultForm)
+        resultForm.submit()
     }
 }
 
