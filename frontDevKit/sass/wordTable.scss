@@ -16,7 +16,58 @@
         border-radius: 4px;
         box-sizing: border-box;
 
-        &__inside__border {
+        &__inside__border1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #4CAEE1;
+            border-radius: 50%;
+            animation: hiddendiv 3s cubic-bezier(0.71, 0.32, 0.61, 1.13);
+        }
+
+        &__inside__border2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #4CAEE1;
+            border-radius: 50%;
+        }
+
+        &__inside__border3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #4CAEE1;
+            border-radius: 50%;
+        }
+
+        &__inside__border4 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #4CAEE1;
+            border-radius: 50%;
+        }
+
+        &__inside__border5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border: 3px solid #4CAEE1;
+            border-radius: 50%;
+        }
+
+        &__inside__border6{
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,6 +84,7 @@
         height: 8vh;
         top: 0;
         left: 0;
+        animation: rotateX 3s ease-in-out;
     }
 
     &__2 {
@@ -41,6 +93,7 @@
         height: 10vh;
         bottom: 0;
         left: 0;
+        backface-visibility: hidden;
     }
 
     &__3 {
@@ -49,6 +102,7 @@
         height: 10vh;
         bottom: 0;
         left: 20vw;
+        backface-visibility: hidden;
     }
 
     &__4 {
@@ -57,6 +111,7 @@
         height: 20vh;
         top: 0;
         right: 18vw;
+        backface-visibility: hidden;
     }
 
     &__5 {
@@ -65,6 +120,7 @@
         height: 9vh;
         top: 0;
         right: 0;
+        backface-visibility: hidden;
     }
 
     &__6 {
@@ -73,6 +129,7 @@
         height: 9vh;
         bottom: 0;
         right: 0;
+        backface-visibility: hidden;
     }
 }
 
@@ -110,6 +167,7 @@
                 height: 40px;
                 border: 2px solid #4CAEE1;
                 border-radius: 50%;
+
             }
         }
     
@@ -178,9 +236,38 @@
      50%{
          transform:scale(0.9);
          
+         
      }
      100%{
         transform:scale(1);
 
      }
  }
+
+ @keyframes rotateX {
+    0% {
+         transform: perspective(600px) rotateY(0deg);
+    }
+    50%{
+         
+        } 
+ 
+    100%{
+         transform: perspective(600px) rotatey(180deg);
+         
+         
+     }
+ }
+
+ @keyframes hiddendiv {
+    0% {
+         transform: perspective(600px) rotateY(0deg);
+    }
+    100%{
+         transform: perspective(600px) rotatey(180deg);
+         backface-visibility: hidden;
+         
+         
+     }
+ }
+

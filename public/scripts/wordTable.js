@@ -41,19 +41,19 @@ class wordTableGame {
 
     loadLevel() {
         //Text of the subtitle
-        this.secondTitle.innerText = this.levels[this.levelToLoad-1][0]
+        this.secondTitle.innerText = this.levels[this.levelToLoad - 1][0]
 
         this.reponseForm.addEventListener('submit', (_event) => {
             _event.preventDefault()
-            
-            for (let i = 0; i < this.levels[this.levelToLoad-1].length-1; i++) {
-                
-                //if the player put a good answer
-                if(this.reponseInput.value == this.levels[this.levelToLoad-1][i+1][1]) {
 
-                    this.propositions[i].innerText = this.levels[this.levelToLoad-1][i+1][1]
+            for (let i = 0; i < this.levels[this.levelToLoad - 1].length - 1; i++) {
+
+                //if the player put a good answer
+                if (this.reponseInput.value == this.levels[this.levelToLoad - 1][i + 1][1]) {
+
+                    this.propositions[i].innerText = this.levels[this.levelToLoad - 1][i + 1][1]
                     this.propositions[i].style.color = '#F5F5F5'
-                    this.propositions[i].style.background = `url("${ this.levels[this.levelToLoad-1][i+1][0] }")`
+                    this.propositions[i].style.background = `url("${this.levels[this.levelToLoad - 1][i + 1][0]}")`
                 }
             }
         })
@@ -62,21 +62,21 @@ class wordTableGame {
     timeOut() {
         let seconds = 60
 
-            this.timeInterval = setInterval(() => {
+        this.timeInterval = setInterval(() => {
 
-                seconds --
+            seconds--
 
-                //We change the text of the seconds
-                this.timerText.innerText = seconds
+            //We change the text of the seconds
+            this.timerText.innerText = seconds
 
-                if(seconds == 0)
-                {
-                    alert('Fin du game mon gars')
-                    clearInterval(this.timeInterval)
-                }
+            if (seconds == 0) {
+                alert('Fin du game mon gars')
+                clearInterval(this.timeInterval)
+            }
         }, 1000);
 
     }
 }
 
 const wordTable = new wordTableGame(document.querySelector('.game__zone'), levelQuestions, levelAsked)
+

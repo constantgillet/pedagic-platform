@@ -69,7 +69,7 @@ main {
 
             [type=text], [type=email], [type=password]{
                 height: 4.2vh;
-                width: 20vw;
+                width: 47vh;
                 border: solid black 1px;
                 border-radius: 8px;
                 font-size: 1.2em;
@@ -129,4 +129,8 @@ a {
     .submit{
         width: 13vw;
     }
+    [type=email], [type=password]{
+        width: 42vh;
+    }
+    
 }

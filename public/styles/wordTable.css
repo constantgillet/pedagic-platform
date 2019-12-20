@@ -14,7 +14,48 @@
     border: 2px solid #F9EEC5;
     border-radius: 4px;
     box-sizing: border-box; }
-    .proposition__key__word .proposition__inside__border {
+    .proposition__key__word .proposition__inside__border1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #4CAEE1;
+      border-radius: 50%;
+      animation: hiddendiv 3s cubic-bezier(0.71, 0.32, 0.61, 1.13); }
+    .proposition__key__word .proposition__inside__border2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #4CAEE1;
+      border-radius: 50%; }
+    .proposition__key__word .proposition__inside__border3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #4CAEE1;
+      border-radius: 50%; }
+    .proposition__key__word .proposition__inside__border4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #4CAEE1;
+      border-radius: 50%; }
+    .proposition__key__word .proposition__inside__border5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #4CAEE1;
+      border-radius: 50%; }
+    .proposition__key__word .proposition__inside__border6 {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -27,37 +68,43 @@
     width: 30vw;
     height: 8vh;
     top: 0;
-    left: 0; }
+    left: 0;
+    animation: rotateX 3s ease-in-out; }
   .proposition__key__word__2 {
     position: absolute;
     width: 18vw;
     height: 10vh;
     bottom: 0;
-    left: 0; }
+    left: 0;
+    backface-visibility: hidden; }
   .proposition__key__word__3 {
     position: absolute;
     width: 10vw;
     height: 10vh;
     bottom: 0;
-    left: 20vw; }
+    left: 20vw;
+    backface-visibility: hidden; }
   .proposition__key__word__4 {
     position: absolute;
     width: 20vw;
     height: 20vh;
     top: 0;
-    right: 18vw; }
+    right: 18vw;
+    backface-visibility: hidden; }
   .proposition__key__word__5 {
     position: absolute;
     width: 16vw;
     height: 9vh;
     top: 0;
-    right: 0; }
+    right: 0;
+    backface-visibility: hidden; }
   .proposition__key__word__6 {
     position: absolute;
     width: 16vw;
     height: 9vh;
     bottom: 0;
-    right: 0; }
+    right: 0;
+    backface-visibility: hidden; }
 
 .game__zone__response__enter {
   position: absolute;
@@ -139,5 +186,16 @@
     transform: scale(0.9); }
   100% {
     transform: scale(1); } }
+@keyframes rotateX {
+  0% {
+    transform: perspective(600px) rotateY(0deg); }
+  100% {
+    transform: perspective(600px) rotatey(180deg); } }
+@keyframes hiddendiv {
+  0% {
+    transform: perspective(600px) rotateY(0deg); }
+  100% {
+    transform: perspective(600px) rotatey(180deg);
+    backface-visibility: hidden; } }
 
 /*# sourceMappingURL=wordTable.css.map */
