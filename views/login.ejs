@@ -23,14 +23,14 @@
                         <input type="email" name="email" id="email" required>
                         <label for="password">Mot de passe</label>
                         <input type="password" name="password" id="password" required>
-                        <input type="image" name="image" id="image" src=images/eye.svg> <!-- Left form part end -->
+                        <input type="image" name="image" id="image" src=images/eye.svg>
                         <!-- Right form part -->
                 </div>
                 <% if(typeof(alertMessage) != 'undefined') { %>
                 <div class="login-section__form__alert"><%= alertMessage %></div>
                 <% } %>
                 <input type="submit" placeholder="S'inscrire" class="submit">
-                <a href="http://localhost:3000/subscribe" class="login__section__form__login-link">S'inscrire</a>
+                <a href="http://localhost:3000/subscribe" class="subscribe-link">S'inscrire</a>
             </form><!-- login form end -->
         </section>
     </main>

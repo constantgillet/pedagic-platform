@@ -5,23 +5,16 @@ body {
     object-fit: cover;
     font-size: 1rem;
     color: #4C4C4C;
-    
-}
-
-main {
-    height:100vh;
-    width: 100vw;
     background: #F5F5F5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .login-section {
     position: absolute;
+    width: 70vw;
+    height: 70vh;
+    left: 2.5vw;
+    top: 2.5vh;
     background: #FDFDFD;
-    width: 38vw;
-    height: 90vh;
     border-radius: 6px;
     box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
     display: flex;
@@ -30,32 +23,41 @@ main {
     flex-direction: column;
 
     &__title {
-        font-weight: 900;
+        position: absolute;
+        height: 10vh;
+        width: 30vw;
+        top: 5vh;
         font-size: 	2.5rem;
         line-height: 43px;
         text-align: center;
-        position: absolute;
-        z-index: 1;
-        top : 12%;
+    }
+
+    &__form {
+
+        &__alert {
+            position: absolute;
+            top: 45vh;
+            left: 22.5vw;
+            width: 30vw;
+            height: 20px;
+            position: absolute;
+            color: #F13B3B;
+            font-size: 1.1rem;
+        }
     }
 
     &__alert {
+        position: absolute;
         color: #F13B3B;
-        margin-top: 15px;
         font-size: 1.1rem;
     }
 
     .login-form {
 
-        &__main-part {
-            flex-direction: row;
-            flex-wrap: nowrap;
-            position: relative;
-            justify-content: center;
-            display: flex;
-        }
-
         &__first-part {
+            position: absolute;
+            top: 13vh;
+            left: 16vw;
             display: flex;
             flex-direction: column;
            
@@ -69,7 +71,7 @@ main {
 
             [type=text], [type=email], [type=password]{
                 height: 4.2vh;
-                width: 47vh;
+                width: 35vw;
                 border: solid black 1px;
                 border-radius: 8px;
                 font-size: 1.2em;
@@ -77,63 +79,141 @@ main {
                 color: #4C4C4C;
             }
         }
-           [type=image]{
+
+        [type=image]{
             position: absolute;
             height: 3vh;
             width: 3vh;
-            left: 85%;
-            top: 87%;
-           }
+            right: 3%;
+            bottom: 2%;
+        }
 
-        &__second-part {
-
+        .submit {
             position: absolute;
-            right: -130%;
-            top: 50%;
+            top: 50vh;
+            left: 26vw;
+            background: #4CAEE1;
+            border: none;
+            border-radius: 8px;
+            height: 4vh;
+            width: 20vh;
+            font-weight: bold;
+            color: white;
+            font-size: 1.25rem;
         }
 
-.submit {
-        background: #4CAEE1;
-        border: none;
-        border-radius: 8px;
-        height:  5vh;
-        width: 16vh;
-        font-weight: bold;
-        color: white;
-        font-size: 1.25rem;
-        margin-top: 30%;
-        margin-left: 31%;
-
-           
-        }
-a {
-            color: #424242;
-            margin-top: 1.7vh;
-            margin-bottom: 1.7vh;
-            font-size: 1.2em;
+        a {
+            top: 55vh;
+            left: 30.5vw;
+            width: 80vw;
+            height: 20px;
             position: absolute;
-            top : 75%;
-            left: 45%;
-        }
+            color: #5b5b5b;
+            font-size: 1.3rem;
+        }    
     }
 }
 
 @media screen and (max-width: 450px) {
-    .login-section{
-       width:94vw;
-    }
-    a{
-        left: 37.5%;
-        top: 79%;
-    }
-    .submit{
-        width: 13vw;
-    }
-    [type=email], [type=password]{
-        width: 42vh;
-    }
-    [type=image]{
-        height: 4vh;
-        width: 10vw;
+    
+    .login-section {
+        position: absolute;
+        width: 70vw;
+        height: 70vh;
+        left: 4.5vw;
+        top: 4vh;
+        background: #FDFDFD;
+        border-radius: 6px;
+        box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.14);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+        &__title {
+            position: absolute;
+            height: 10vh;
+            width: 60vw;
+            top: 0;
+            font-size: 	1.5rem;
+            line-height: 43px;
+            text-align: center;
+        }
+    
+        &__form {
+    
+            &__alert {
+                top: 35vh;
+                left: 5vw;
+                width: 80vw;
+                height: 20px;
+                position: absolute;
+                color: #F13B3B;
+                font-size: 0.8rem;
+            }
+        }
+    
+        .login-form {
+    
+            &__first-part {
+                position: absolute;
+                width: 60vw;
+                height: 40vh;
+                top: 13vh;
+                left: 5vw;
+                display: flex;
+                flex-direction: column;
+               
+    
+                label {
+                    font-weight: normal;
+                    font-size: 0.8rem;
+                    padding-left: 10px;
+                }
+    
+                [type=text], [type=email], [type=password]{
+                    height: 3vh;
+                    width: 90%;
+                    border: solid black 1px;
+                    border-radius: 8px;
+                    font-size: 0.8em;
+                    padding-left: 20px;
+                    color: #4C4C4C;
+                }
+            }
+    
+            [type=image]{
+                position: absolute;
+                height: 2vh;
+                width: 2vh;
+                right: 4%;
+                bottom: 51.5%;
+            }
+    
+        .submit {
+            position: absolute;
+            top: 45vh;
+            left: 17.5vw;
+            background: #4CAEE1;
+            border: none;
+            border-radius: 8px;
+            height: 4vh;
+            width: 16vh;
+            font-weight: bold;
+            color: white;
+            font-size: 0.8rem;
+        }
+    
+            a {
+                top: 50vh;
+                left: 27.5vw;
+                width: 80vw;
+                height: 20px;
+                position: absolute;
+                color: #5b5b5b;
+                font-size: 0.8rem;
+            }
+        }
+
     }
 }
